@@ -1,0 +1,1 @@
+$CPACHECKER/scripts/cpa.sh -config $CPACHECKER/CPAchecker-2.0-unix/config/predicateAnalysis.properties -timelimit 900s -preprocess mcFile31416.c 
