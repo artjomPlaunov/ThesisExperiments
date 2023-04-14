@@ -24,6 +24,12 @@ The examples in this repository assume CPAchecker version 2.0. (Although there i
 currently a newer version of CPAchecker (2.2), so this may be changed upon running
 more experiments.
 
+**Important** The BASH environment should have a flag for CPACHECKER which points
+to your installation of CPAchecker. Also note that depending on your version of
+CPAchecker, the "svcomp21.properties" file may have a different year, like
+svcomp20 or svcomp22, in which case that should be changed in the RunResults.hs
+script.
+
 The script to run analyses requires a GHC haskell compiler; it is known to work
 on 8.8.4.
 
