@@ -8,13 +8,13 @@ import System.Process
 
 s1 = "$CPACHECKER/scripts/cpa.sh -config"
 s2 = " $CPACHECKER/config/"
-s3 = ".properties -timelimit 900s -preprocess "
+s3 = ".properties -timelimit 900s -heap 4000m -preprocess "
 
 analysisTypes = [("pred", "predicateAnalysis"),
                   ("value", "valueAnalysis"),
                   ("cmc", "combinations-value100+pred-cmc"),
-                  ("svcomp", "svcomp21"),
-                  ("eva-svcomp", "svcomp21"),
+                  ("svcomp", "svcomp23"),
+                  ("eva-svcomp", "svcomp23"),
                   ("eva-pred", "predicateAnalysis")]
                   
 main = do
