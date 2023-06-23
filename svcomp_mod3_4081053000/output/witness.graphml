@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <key attr.name="isEntryNode" attr.type="boolean" for="node" id="entry">
+  <default>false</default>
+ </key>
+ <key attr.name="enterLoopHead" attr.type="boolean" for="edge" id="enterLoopHead">
+  <default>false</default>
+ </key>
+ <key attr.name="sourcecodeLanguage" attr.type="string" for="graph" id="sourcecodelang"/>
+ <key attr.name="programFile" attr.type="string" for="graph" id="programfile"/>
+ <key attr.name="programHash" attr.type="string" for="graph" id="programhash"/>
+ <key attr.name="specification" attr.type="string" for="graph" id="specification"/>
+ <key attr.name="architecture" attr.type="string" for="graph" id="architecture"/>
+ <key attr.name="producer" attr.type="string" for="graph" id="producer"/>
+ <key attr.name="creationTime" attr.type="string" for="graph" id="creationtime"/>
+ <key attr.name="startline" attr.type="int" for="edge" id="startline"/>
+ <key attr.name="endline" attr.type="int" for="edge" id="endline"/>
+ <key attr.name="originFileName" attr.type="string" for="edge" id="originfile">
+  <default>../d_svcomp/mod3.c</default>
+ </key>
+ <key attr.name="control" attr.type="string" for="edge" id="control"/>
+ <key attr.name="enterFunction" attr.type="string" for="edge" id="enterFunction"/>
+ <key attr.name="returnFromFunction" attr.type="string" for="edge" id="returnFrom"/>
+ <key attr.name="witness-type" attr.type="string" for="graph" id="witness-type"/>
+ <key attr.name="inputWitnessHash" attr.type="string" for="graph" id="inputwitnesshash"/>
+ <graph edgedefault="directed">
+  <data key="witness-type">correctness_witness</data>
+  <data key="sourcecodelang">C</data>
+  <data key="producer">CPAchecker 2.2 / svcomp23</data>
+  <data key="specification">// This file is part of CPAchecker,
+// a tool for configurable software verification:
+// https://cpachecker.sosy-lab.org
+//
+// SPDX-FileCopyrightText: 2007-2020 Dirk Beyer &lt;https://www.sosy-lab.org&gt;
+//
+// SPDX-License-Identifier: Apache-2.0
+
+// This automaton contains the specification of the
+// Competition on Software Verification.
+// It checks only for calls to the __VERIFIER_error()/reach_error() functions
+// and also implements some functions which usually lead to a program abort.
+CONTROL AUTOMATON SVCOMP
+
+INITIAL STATE Init;
+
+STATE USEFIRST Init :
+  MATCH {__VERIFIER_error($?)} || MATCH {reach_error($?)} || MATCH FUNCTIONCALL "reach_error"
+      -&gt; ERROR("unreach-call: $rawstatement called in $location");
+  MATCH {__assert_fail($?)} || MATCH {abort($?)} || MATCH {exit($?)} -&gt; STOP;
+
+END AUTOMATON</data>
+  <data key="programfile">../d_svcomp/mod3.c</data>
+  <data key="programhash">c23fb29954b6485032f48b34d3a68bbefac563e5594078eda21b12e10b6e0fb3</data>
+  <data key="architecture">32bit</data>
+  <data key="creationtime">2023-06-22T23:38:26-04:00</data>
+  <node id="N8">
+   <data key="entry">true</data>
+  </node>
+  <node id="N9"/>
+  <edge source="N8" target="N9">
+   <data key="startline">14</data>
+   <data key="endline">14</data>
+   <data key="enterFunction">main</data>
+  </edge>
+  <node id="N30"/>
+  <edge source="N9" target="N30">
+   <data key="enterLoopHead">true</data>
+   <data key="startline">24</data>
+   <data key="endline">24</data>
+  </edge>
+  <node id="N21"/>
+  <edge source="N30" target="N21">
+   <data key="startline">26</data>
+   <data key="endline">26</data>
+   <data key="control">condition-true</data>
+  </edge>
+  <node id="N22"/>
+  <edge source="N30" target="N22">
+   <data key="startline">26</data>
+   <data key="endline">26</data>
+   <data key="control">condition-false</data>
+  </edge>
+  <node id="N35"/>
+  <edge source="N22" target="N35">
+   <data key="startline">41</data>
+   <data key="endline">41</data>
+   <data key="control">condition-false</data>
+  </edge>
+  <node id="N36"/>
+  <edge source="N22" target="N36">
+   <data key="startline">41</data>
+   <data key="endline">41</data>
+   <data key="control">condition-true</data>
+  </edge>
+  <node id="N7"/>
+  <edge source="N36" target="N7">
+   <data key="startline">47</data>
+   <data key="endline">47</data>
+   <data key="returnFrom">main</data>
+  </edge>
+  <node id="N1"/>
+  <edge source="N35" target="N1">
+   <data key="startline">44</data>
+   <data key="endline">44</data>
+   <data key="enterFunction">error</data>
+  </edge>
+  <node id="N0"/>
+  <edge source="N1" target="N0">
+   <data key="startline">11</data>
+   <data key="endline">11</data>
+   <data key="returnFrom">error</data>
+  </edge>
+  <edge source="N0" target="N36">
+   <data key="startline">44</data>
+   <data key="endline">44</data>
+  </edge>
+  <node id="N25"/>
+  <edge source="N21" target="N25">
+   <data key="startline">32</data>
+   <data key="endline">32</data>
+   <data key="control">condition-true</data>
+  </edge>
+  <node id="N27"/>
+  <edge source="N21" target="N27">
+   <data key="startline">32</data>
+   <data key="endline">32</data>
+   <data key="control">condition-false</data>
+  </edge>
+  <edge source="N27" target="N30">
+   <data key="enterLoopHead">true</data>
+   <data key="startline">37</data>
+   <data key="endline">37</data>
+  </edge>
+  <edge source="N25" target="N27">
+   <data key="startline">33</data>
+   <data key="endline">33</data>
+   <data key="control">condition-true</data>
+  </edge>
+  <edge source="N25" target="N27">
+   <data key="startline">33</data>
+   <data key="endline">33</data>
+   <data key="control">condition-false</data>
+  </edge>
+ </graph>
+</graphml>

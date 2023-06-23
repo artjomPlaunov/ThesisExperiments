@@ -1,0 +1,261 @@
+Running CPAchecker with Java heap of size 4000m.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Statistics for algorithm 1 of 7
+===============================
+Total time for algorithm 1:   125.819s
+
+ValueAnalysisCPA statistics
+---------------------------
+Number of variables per state:                     1.50 (sum: 104168, count: 69448, min: 0, max: 2)
+Number of global variables per state:              0.00 (sum: 0, count: 69448, min: 0, max: 0)
+Number of assumptions:                                46296
+Number of deterministic assumptions:                      0
+Level of Determinism:                              0%
+
+ValueAnalysisPrecisionAdjustment statistics
+-------------------------------------------
+Number of abstraction computations:                   69447
+Total time for liveness abstraction:                   0.000s
+Total time for abstraction computation:                0.071s
+Total time for path thresholds:                        0.000s
+
+SymbolicValueAnalysisPrecisionAdjustment statistics
+---------------------------------------------------
+Symbolic values before refinement:                        0 (count: 69447, min: 0, max: 0, avg: 0.00)
+Symbolic values after refinement:                         0 (count: 69447, min: 0, max: 0, avg: 0.00)
+
+ConstraintsStrengthenOperator statistics
+----------------------------------------
+Total time for strengthening by ConstraintsCPA:     0.012s
+Replaced symbolic expressions: 0
+
+ConstraintsCPA statistics
+-------------------------
+
+Time for solving constraints:                          1.271s
+  Time for SMT check:                                  0.000s
+  Time for resolving definites:                        0.000s
+
+Cache lookups:                                        11574
+Direct cache hits:                                    11573
+Direct cache lookup time:                              0.017s
+Subset cache hits:                                        0
+Subset cache lookup time:                              0.000s
+Superset cache hits:                                      0
+Superset cache lookup time:                            0.000s
+
+Number of removed outdated constraints:                   0 (count: 11574, min: 0, max: 0, avg: 0.00)
+Time for outdated constraint removal:                  0.066s
+
+Constraints after refinement in state:                    0 (count: 69447, min: 0, max: 0, avg: 0.00)
+Constraints before refinement in state:                   0 (count: 69447, min: 0, max: 0, avg: 0.00)
+Time for constraints adjustment:                       0.044s
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.138s
+Automaton transfers with branching:                0
+Automaton transfer successors:                     1.00 (sum: 69455, count: 69455, min: 1, max: 1) [1 x 69455]
+Number of states with assumption transitions:      0
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            69447
+Max size of waitlist:            1
+Average size of waitlist:        1
+Number of computed successors:   69447
+Max successors for one state:    1
+Number of times merged:          0
+Number of times stopped:         0
+Number of times breaked:         0
+
+Total time for CPA algorithm:       125.529s (Max:   125.529s)
+  Time for choose from waitlist:      0.057s
+  Time for precision adjustment:      0.594s
+  Time for transfer relation:         3.409s
+  Time for stop operator:           120.823s
+  Time for adding to reached set:     0.194s
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    0
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            69447
+Max size of waitlist:            1
+Average size of waitlist:        1
+Number of computed successors:   69447
+Max successors for one state:    1
+Number of times merged:          0
+Number of times stopped:         0
+Number of times breaked:         0
+
+Total time for CPA algorithm:       125.529s (Max:   125.529s)
+  Time for choose from waitlist:      0.057s
+  Time for precision adjustment:      0.594s
+  Time for transfer relation:         3.409s
+  Time for stop operator:           120.823s
+  Time for adding to reached set:     0.194s
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    0
+
+Statistics for algorithm 2 of 7
+===============================
+Total time for algorithm 2:    49.779s
+
+ValueAnalysisCPA statistics
+---------------------------
+Number of variables per state:                     1.50 (sum: 61984, count: 41325, min: 0, max: 2)
+Number of global variables per state:              0.00 (sum: 0, count: 41325, min: 0, max: 0)
+Number of assumptions:                                27564
+Number of deterministic assumptions:                      0
+Level of Determinism:                              0%
+
+ValueAnalysisPrecisionAdjustment statistics
+-------------------------------------------
+Number of abstraction computations:                   41371
+Total time for liveness abstraction:                   0.000s
+Total time for abstraction computation:                0.049s
+Total time for path thresholds:                        0.000s
+
+ConstraintsStrengthenOperator statistics
+----------------------------------------
+Total time for strengthening by ConstraintsCPA:     0.000s
+Replaced symbolic expressions: 0
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.078s
+Automaton transfers with branching:                0
+Automaton transfer successors:                     1.00 (sum: 41395, count: 41395, min: 1, max: 1) [1 x 41395]
+Number of states with assumption transitions:      0
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            41369
+Max size of waitlist:            3
+Average size of waitlist:        1
+Number of computed successors:   41371
+Max successors for one state:    2
+Number of times merged:          0
+Number of times stopped:         2
+Number of times breaked:         2
+
+Total time for CPA algorithm:        49.618s (Max:    49.588s)
+  Time for choose from waitlist:      0.134s
+  Time for precision adjustment:      0.193s
+  Time for transfer relation:         0.883s
+  Time for stop operator:            48.063s
+  Time for adding to reached set:     0.210s
+
+ValueAnalysisRefiner statistics
+-------------------------------
+Number of refinements:                                    2
+Number of targets found:                                  2 (count: 2, min: 1, max: 1, avg: 1.00)
+Time for completing refinement:                        0.054s
+Number of root relocations:                               0
+Number of similar, repeated refinements:                  0
+Number of unique precision increments:             2
+
+PathExtractor statistics
+------------------------
+Total number of targets found:            0
+
+ValueAnalysisPathInterpolator statistics
+----------------------------------------
+  Time for interpolation:                              0.008s
+  Number of interpolations:                               2
+  Number of interpolation queries:                       11 (count: 14, min: 0, max: 2, avg: 0.79)
+  Size of interpolant:                             0.71 (sum: 10, count: 14, min: 0, max: 1)
+  Number of sliced prefixes:                              4 (count: 2, min: 2, max: 2, avg: 2.00)
+  Extracting infeasible sliced prefixes:               0.019s
+  Selecting infeasible sliced prefixes:                0.005s
+
+CEGAR algorithm statistics
+--------------------------
+Number of CEGAR refinements:          2
+Number of successful refinements:     2
+Number of failed refinements:         0
+Max. size of reached set before ref.: 26
+Max. size of reached set after ref.:  1
+Avg. size of reached set before ref.: 23.50
+Avg. size of reached set after ref.:  1.00
+
+Total time for CEGAR algorithm:      49.711s
+Time for refinements:                 0.093s
+Average time for refinement:          0.046s
+Max time for refinement:              0.073s
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    0
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            41369
+Max size of waitlist:            3
+Average size of waitlist:        1
+Number of computed successors:   41371
+Max successors for one state:    2
+Number of times merged:          0
+Number of times stopped:         2
+Number of times breaked:         2
+
+Total time for CPA algorithm:        49.618s (Max:    49.588s)
+  Time for choose from waitlist:      0.134s
+  Time for precision adjustment:      0.193s
+  Time for transfer relation:         0.883s
+  Time for stop operator:            48.063s
+  Time for adding to reached set:     0.210s
+
+ValueAnalysisRefiner statistics
+-------------------------------
+Number of refinements:                                    2
+Number of targets found:                                  2 (count: 2, min: 1, max: 1, avg: 1.00)
+Time for completing refinement:                        0.054s
+Number of root relocations:                               0
+Number of similar, repeated refinements:                  0
+Number of unique precision increments:             2
+
+PathExtractor statistics
+------------------------
+Total number of targets found:            0
+
+ValueAnalysisPathInterpolator statistics
+----------------------------------------
+  Time for interpolation:                              0.008s
+  Number of interpolations:                               2
+  Number of interpolation queries:                       11 (count: 14, min: 0, max: 2, avg: 0.79)
+  Size of interpolant:                             0.71 (sum: 10, count: 14, min: 0, max: 1)
+  Number of sliced prefixes:                              4 (count: 2, min: 2, max: 2, avg: 2.00)
+  Extracting infeasible sliced prefixes:               0.019s
+  Selecting infeasible sliced prefixes:                0.005s
+
+CEGAR algorithm statistics
+--------------------------
+Number of CEGAR refinements:          2
+Number of successful refinements:     2
+Number of failed refinements:         0
+Max. size of reached set before ref.: 26
+Max. size of reached set after ref.:  1
+Avg. size of reached set before ref.: 23.50
+Avg. size of reached set after ref.:  1.00
+
+Total time for CEGAR algorithm:      49.711s
+Time for refinements:                 0.093s
+Average time for refinement:          0.046s
+Max time for refinement:              0.073s
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    0
+
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+$CPACHECKER/scripts/cpa.sh -config $CPACHECKER/config/svcomp23.properties -timelimit 900s -heap 4000m -benchmark -preprocess ../d_eva-svcomp/loop3.c
+ExitSuccess

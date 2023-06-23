@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <key attr.name="isEntryNode" attr.type="boolean" for="node" id="entry">
+  <default>false</default>
+ </key>
+ <key attr.name="enterLoopHead" attr.type="boolean" for="edge" id="enterLoopHead">
+  <default>false</default>
+ </key>
+ <key attr.name="sourcecodeLanguage" attr.type="string" for="graph" id="sourcecodelang"/>
+ <key attr.name="programFile" attr.type="string" for="graph" id="programfile"/>
+ <key attr.name="programHash" attr.type="string" for="graph" id="programhash"/>
+ <key attr.name="specification" attr.type="string" for="graph" id="specification"/>
+ <key attr.name="architecture" attr.type="string" for="graph" id="architecture"/>
+ <key attr.name="producer" attr.type="string" for="graph" id="producer"/>
+ <key attr.name="creationTime" attr.type="string" for="graph" id="creationtime"/>
+ <key attr.name="startline" attr.type="int" for="edge" id="startline"/>
+ <key attr.name="endline" attr.type="int" for="edge" id="endline"/>
+ <key attr.name="originFileName" attr.type="string" for="edge" id="originfile">
+  <default>../d_eva-svcomp/gauge1.c</default>
+ </key>
+ <key attr.name="control" attr.type="string" for="edge" id="control"/>
+ <key attr.name="enterFunction" attr.type="string" for="edge" id="enterFunction"/>
+ <key attr.name="returnFromFunction" attr.type="string" for="edge" id="returnFrom"/>
+ <key attr.name="witness-type" attr.type="string" for="graph" id="witness-type"/>
+ <key attr.name="inputWitnessHash" attr.type="string" for="graph" id="inputwitnesshash"/>
+ <graph edgedefault="directed">
+  <data key="witness-type">correctness_witness</data>
+  <data key="sourcecodelang">C</data>
+  <data key="producer">CPAchecker 2.2 / svcomp23</data>
+  <data key="specification">// This file is part of CPAchecker,
+// a tool for configurable software verification:
+// https://cpachecker.sosy-lab.org
+//
+// SPDX-FileCopyrightText: 2007-2020 Dirk Beyer &lt;https://www.sosy-lab.org&gt;
+//
+// SPDX-License-Identifier: Apache-2.0
+
+// This automaton contains the specification of the
+// Competition on Software Verification.
+// It checks only for calls to the __VERIFIER_error()/reach_error() functions
+// and also implements some functions which usually lead to a program abort.
+CONTROL AUTOMATON SVCOMP
+
+INITIAL STATE Init;
+
+STATE USEFIRST Init :
+  MATCH {__VERIFIER_error($?)} || MATCH {reach_error($?)} || MATCH FUNCTIONCALL "reach_error"
+      -&gt; ERROR("unreach-call: $rawstatement called in $location");
+  MATCH {__assert_fail($?)} || MATCH {abort($?)} || MATCH {exit($?)} -&gt; STOP;
+
+END AUTOMATON</data>
+  <data key="programfile">../d_eva-svcomp/gauge1.c</data>
+  <data key="programhash">6123ffcd98799658ec9d049920b9a22d1df3716630f1c841ecb1eff2689cadab</data>
+  <data key="architecture">32bit</data>
+  <data key="creationtime">2023-06-22T21:24:58-04:00</data>
+  <node id="N20">
+   <data key="entry">true</data>
+  </node>
+  <node id="N21"/>
+  <edge source="N20" target="N21">
+   <data key="startline">16</data>
+   <data key="endline">16</data>
+   <data key="enterFunction">main</data>
+  </edge>
+  <node id="N26"/>
+  <edge source="N21" target="N26">
+   <data key="startline">19</data>
+   <data key="endline">19</data>
+   <data key="control">condition-true</data>
+  </edge>
+  <node id="N28"/>
+  <edge source="N21" target="N28">
+   <data key="startline">19</data>
+   <data key="endline">19</data>
+   <data key="control">condition-false</data>
+  </edge>
+  <node id="N5"/>
+  <edge source="N28" target="N5">
+   <data key="startline">19</data>
+   <data key="endline">19</data>
+   <data key="enterFunction">assume_abort_if_not</data>
+  </edge>
+  <node id="N8"/>
+  <edge source="N5" target="N8">
+   <data key="startline">7</data>
+   <data key="endline">7</data>
+   <data key="control">condition-true</data>
+  </edge>
+  <node id="N7"/>
+  <edge source="N5" target="N7">
+   <data key="startline">7</data>
+   <data key="endline">7</data>
+   <data key="control">condition-false</data>
+  </edge>
+  <node id="N30"/>
+  <edge source="N7" target="N30">
+   <data key="startline">19</data>
+   <data key="endline">19</data>
+   <data key="returnFrom">assume_abort_if_not</data>
+  </edge>
+  <node id="N32"/>
+  <edge source="N30" target="N32">
+   <data key="enterLoopHead">true</data>
+   <data key="startline">20</data>
+   <data key="endline">20</data>
+  </edge>
+  <node id="N34"/>
+  <edge source="N32" target="N34">
+   <data key="startline">20</data>
+   <data key="endline">20</data>
+   <data key="control">condition-true</data>
+  </edge>
+  <node id="N35"/>
+  <edge source="N32" target="N35">
+   <data key="startline">20</data>
+   <data key="endline">20</data>
+   <data key="control">condition-false</data>
+  </edge>
+  <node id="N44"/>
+  <edge source="N35" target="N44">
+   <data key="startline">24</data>
+   <data key="endline">24</data>
+   <data key="control">condition-true</data>
+  </edge>
+  <node id="N46"/>
+  <edge source="N35" target="N46">
+   <data key="startline">24</data>
+   <data key="endline">24</data>
+   <data key="control">condition-false</data>
+  </edge>
+  <node id="N11"/>
+  <edge source="N46" target="N11">
+   <data key="startline">24</data>
+   <data key="endline">24</data>
+   <data key="enterFunction">__VERIFIER_assert</data>
+  </edge>
+  <node id="N14"/>
+  <edge source="N11" target="N14">
+   <data key="startline">10</data>
+   <data key="endline">10</data>
+   <data key="control">condition-true</data>
+  </edge>
+  <node id="N13"/>
+  <edge source="N11" target="N13">
+   <data key="startline">10</data>
+   <data key="endline">10</data>
+   <data key="control">condition-false</data>
+  </edge>
+  <node id="N10"/>
+  <edge source="N13" target="N10">
+   <data key="startline">13</data>
+   <data key="endline">13</data>
+   <data key="returnFrom">__VERIFIER_assert</data>
+  </edge>
+  <node id="N48"/>
+  <edge source="N10" target="N48">
+   <data key="startline">24</data>
+   <data key="endline">24</data>
+  </edge>
+  <node id="N19"/>
+  <edge source="N48" target="N19">
+   <data key="startline">25</data>
+   <data key="endline">25</data>
+   <data key="returnFrom">main</data>
+  </edge>
+  <node id="N1"/>
+  <edge source="N14" target="N1">
+   <data key="startline">11</data>
+   <data key="endline">11</data>
+   <data key="enterFunction">reach_error</data>
+  </edge>
+  <edge source="N44" target="N46">
+   <data key="startline">24</data>
+   <data key="endline">24</data>
+   <data key="control">condition-false</data>
+  </edge>
+  <edge source="N44" target="N46">
+   <data key="startline">24</data>
+   <data key="endline">24</data>
+   <data key="control">condition-true</data>
+  </edge>
+  <edge source="N34" target="N32">
+   <data key="enterLoopHead">true</data>
+   <data key="startline">20</data>
+   <data key="endline">20</data>
+  </edge>
+  <edge source="N26" target="N28">
+   <data key="startline">19</data>
+   <data key="endline">19</data>
+   <data key="control">condition-false</data>
+  </edge>
+  <edge source="N26" target="N28">
+   <data key="startline">19</data>
+   <data key="endline">19</data>
+   <data key="control">condition-true</data>
+  </edge>
+ </graph>
+</graphml>

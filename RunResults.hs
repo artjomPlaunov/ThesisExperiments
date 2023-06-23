@@ -8,7 +8,7 @@ import System.Process
 
 s1 = "$CPACHECKER/scripts/cpa.sh -config"
 s2 = " $CPACHECKER/config/"
-s3 = ".properties -timelimit 900s -heap 4000m -preprocess "
+s3 = ".properties -timelimit 900s -heap 4000m -benchmark -preprocess "
 
 analysisTypes = [("pred", "predicateAnalysis"),
                   ("value", "valueAnalysis"),
