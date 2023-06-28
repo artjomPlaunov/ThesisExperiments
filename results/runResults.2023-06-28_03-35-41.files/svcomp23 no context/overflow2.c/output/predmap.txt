@@ -1,0 +1,9 @@
+(set-info :source |printed by MathSAT|)
+(declare-fun |__VERIFIER_assert::cond| () (_ BitVec 32))
+
+__VERIFIER_assert:
+(assert (let ((.def_67 (= |__VERIFIER_assert::cond| (_ bv0 32)))).def_67))
+
+reach_error N1:
+(assert false)
+

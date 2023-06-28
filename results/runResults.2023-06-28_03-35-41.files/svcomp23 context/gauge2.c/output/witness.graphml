@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <key attr.name="isEntryNode" attr.type="boolean" for="node" id="entry">
+  <default>false</default>
+ </key>
+ <key attr.name="enterLoopHead" attr.type="boolean" for="edge" id="enterLoopHead">
+  <default>false</default>
+ </key>
+ <key attr.name="sourcecodeLanguage" attr.type="string" for="graph" id="sourcecodelang"/>
+ <key attr.name="programFile" attr.type="string" for="graph" id="programfile"/>
+ <key attr.name="programHash" attr.type="string" for="graph" id="programhash"/>
+ <key attr.name="specification" attr.type="string" for="graph" id="specification"/>
+ <key attr.name="architecture" attr.type="string" for="graph" id="architecture"/>
+ <key attr.name="producer" attr.type="string" for="graph" id="producer"/>
+ <key attr.name="creationTime" attr.type="string" for="graph" id="creationtime"/>
+ <key attr.name="startline" attr.type="int" for="edge" id="startline"/>
+ <key attr.name="endline" attr.type="int" for="edge" id="endline"/>
+ <key attr.name="originFileName" attr.type="string" for="edge" id="originfile">
+  <default>context/gauge2.c</default>
+ </key>
+ <key attr.name="control" attr.type="string" for="edge" id="control"/>
+ <key attr.name="enterFunction" attr.type="string" for="edge" id="enterFunction"/>
+ <key attr.name="returnFromFunction" attr.type="string" for="edge" id="returnFrom"/>
+ <key attr.name="witness-type" attr.type="string" for="graph" id="witness-type"/>
+ <key attr.name="inputWitnessHash" attr.type="string" for="graph" id="inputwitnesshash"/>
+ <graph edgedefault="directed">
+  <data key="witness-type">correctness_witness</data>
+  <data key="sourcecodelang">C</data>
+  <data key="producer">CPAchecker 2.2 / svcomp23</data>
+  <data key="specification">CHECK( init(main()), LTL(G ! call(reach_error())) )</data>
+  <data key="programfile">context/gauge2.c</data>
+  <data key="programhash">c3376cba3537002093086925b27c87bb830dbe0f625266356485106475934388</data>
+  <data key="architecture">32bit</data>
+  <data key="creationtime">2023-06-28T03:45:29-04:00</data>
+  <node id="N8">
+   <data key="entry">true</data>
+  </node>
+  <node id="N9"/>
+  <edge source="N8" target="N9">
+   <data key="startline">38</data>
+   <data key="endline">38</data>
+   <data key="enterFunction">main</data>
+  </edge>
+  <node id="N33"/>
+  <edge source="N9" target="N33">
+   <data key="enterLoopHead">true</data>
+   <data key="startline">70</data>
+   <data key="endline">70</data>
+  </edge>
+  <node id="N24"/>
+  <edge source="N33" target="N24">
+   <data key="startline">72</data>
+   <data key="endline">72</data>
+   <data key="control">condition-true</data>
+  </edge>
+  <node id="N25"/>
+  <edge source="N33" target="N25">
+   <data key="startline">72</data>
+   <data key="endline">72</data>
+   <data key="control">condition-false</data>
+  </edge>
+  <node id="N38"/>
+  <edge source="N25" target="N38">
+   <data key="startline">91</data>
+   <data key="endline">91</data>
+   <data key="control">condition-true</data>
+  </edge>
+  <node id="N40"/>
+  <edge source="N25" target="N40">
+   <data key="startline">91</data>
+   <data key="endline">91</data>
+   <data key="control">condition-false</data>
+  </edge>
+  <node id="N7"/>
+  <edge source="N40" target="N7">
+   <data key="startline">95</data>
+   <data key="endline">95</data>
+   <data key="returnFrom">main</data>
+  </edge>
+  <node id="N1"/>
+  <edge source="N38" target="N1">
+   <data key="startline">92</data>
+   <data key="endline">92</data>
+   <data key="enterFunction">error</data>
+  </edge>
+  <node id="N0"/>
+  <edge source="N1" target="N0">
+   <data key="startline">34</data>
+   <data key="endline">34</data>
+   <data key="returnFrom">error</data>
+  </edge>
+  <edge source="N0" target="N40">
+   <data key="startline">92</data>
+   <data key="endline">92</data>
+  </edge>
+  <node id="N29"/>
+  <edge source="N24" target="N29">
+   <data key="startline">78</data>
+   <data key="endline">78</data>
+   <data key="control">condition-false</data>
+  </edge>
+  <edge source="N24" target="N29">
+   <data key="startline">78</data>
+   <data key="endline">78</data>
+   <data key="control">condition-true</data>
+  </edge>
+  <edge source="N29" target="N33">
+   <data key="enterLoopHead">true</data>
+   <data key="startline">85</data>
+   <data key="endline">85</data>
+  </edge>
+ </graph>
+</graphml>

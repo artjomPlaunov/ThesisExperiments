@@ -1,0 +1,31 @@
+IntBool
+
+[]
+
+IntEq
+
+[]
+
+IntAdd
+
+[]
+
+IntOverflow
+
+[f::__retval__, main::x, f::z, __VERIFIER_assert::cond]
+
+ALL
+
+[f::__retval__, main::x, __VERIFIER_assert::cond, f::z]
+
+DEPENDENCIES
+
+[[__VERIFIER_assert::cond, f::__retval__, f::z, main::x] --> [0, 2, 268435455]]
+
+RELEVANT VARS
+
+[reach_error, f::__retval__, f, main::x, __VERIFIER_assert::cond, __VERIFIER_assert, f::z]
+
+RELEVANT FIELDS
+
+{}

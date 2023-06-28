@@ -1,0 +1,47 @@
+/home/artjom/CPAchecker-2.2-unix/scripts/cpa.sh -benchmark -heap 8000m -config /home/artjom/CPAchecker-2.2-unix/config/predicateAnalysis.properties -timelimit 200s -stats -spec /home/artjom/CPAchecker-2.2-unix/config/properties/unreach-call.prp no_context/combo1.c
+
+
+--------------------------------------------------------------------------------
+
+
+Running CPAchecker with Java heap of size 8000m.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Language C detected and set for analysis (CPAMain.detectFrontendLanguageIfNecessary, INFO)
+
+Using the following resource limits: CPU-time limit of 200s (ResourceLimitChecker.fromConfiguration, INFO)
+
+CPAchecker 2.2 / predicateAnalysis (OpenJDK 64-Bit Server VM 11.0.19) started (CPAchecker.run, INFO)
+
+Parsing CFA from file(s) "no_context/combo1.c" (CPAchecker.parse, INFO)
+
+Error: Parsing failed (line 1047: Syntax error: ) (EclipseCParser.buildCFA, SEVERE)
+
+Please make sure that the code can be compiled by a compiler.
+If the code was not preprocessed, please use a C preprocessor
+or specify the -preprocess command-line argument.
+If the error still occurs, please send this error message
+together with the input file to cpachecker-users@googlegroups.com.
+ (CPAchecker.run, INFO)
+
+
+CPAchecker general statistics
+-----------------------------
+
+Time for analysis setup:          0.509s
+  Time for loading CPAs:          0.000s
+  Time for loading parser:        0.150s
+  Time for CFA construction:      0.346s
+    Time for parsing file(s):     0.263s
+    Time for AST to CFA:          0.051s
+    Time for CFA sanity check:    0.000s
+    Time for post-processing:     0.000s
+Time for Analysis:                0.000s
+CPU time for analysis:            0.000s
+Total time for CPAchecker:        0.508s
+Total CPU time for CPAchecker:    1.100s
+Time for statistics:              0.008s
+
+Time for Garbage Collector:       0.006s (in 1 runs)
+Garbage Collector(s) used:    G1 Old Generation, G1 Young Generation
+
+More details about the verification run can be found in the directory "./output".

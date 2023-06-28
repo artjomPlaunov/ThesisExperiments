@@ -21,25 +21,23 @@ SPDX-License-Identifier: Apache-2.0
     <option name="-config">~/CPAchecker-2.2-unix/config/predicateAnalysis.properties</option> 
     <option name="-preprocess"/>
     <tasks name="Context">
-    <include>context/overflow6.c</include>
+    <include>context/loop6.c</include>
     <propertyfile>~/CPAchecker-2.2-unix/config/properties/unreach-call.prp</propertyfile>
     </tasks> 
   </rundefinition>
 
-<rundefinition name="predicate no context">
+<rundefinition name="svcomp23 context">
       <option name="-benchmark"/>
       <option name="-heap">8000m</option>
-    <option name="-config">~/CPAchecker-2.2-unix/config/predicateAnalysis.properties</option> 
-    <tasks name="No Context">
-    <include>no_context/overflow6.c</include>
+      <option name="-timelimit">900s</option>
+    <option name="-config">~/CPAchecker-2.2-unix/config/svcomp23.properties</option> 
+    <option name="-preprocess"/>
+    <tasks name="Context">
+    <include>context/loop6.c</include>
     <propertyfile>~/CPAchecker-2.2-unix/config/properties/unreach-call.prp</propertyfile>
-    </tasks>
+
+    </tasks> 
   </rundefinition>
-
-
-
-  
-
 
 <rundefinition name="svcomp23 no context">
       <option name="-heap">8000m</option>
@@ -47,23 +45,21 @@ SPDX-License-Identifier: Apache-2.0
     <option name="-preprocess"/>
     <option name="-timelimit">900s</option>
     <tasks name="No Context">
-    <include>no_context/overflow6.c</include>
+    <include>no_context/loop6.c</include>
     <propertyfile>~/CPAchecker-2.2-unix/config/properties/unreach-call.prp</propertyfile>
     </tasks>
   </rundefinition>
 
-  <rundefinition name="svcomp23 context">
+<rundefinition name="predicate no context">
       <option name="-benchmark"/>
       <option name="-heap">8000m</option>
-      <option name="-timelimit">900s</option>
-    <option name="-config">~/CPAchecker-2.2-unix/config/svcomp23.properties</option> 
-    <option name="-preprocess"/>
-    <tasks name="Context">
-    <include>context/overflow6.c</include>
+    <option name="-config">~/CPAchecker-2.2-unix/config/predicateAnalysis.properties</option> 
+    <tasks name="No Context">
+    <include>no_context/loop6.c</include>
     <propertyfile>~/CPAchecker-2.2-unix/config/properties/unreach-call.prp</propertyfile>
-
-    </tasks> 
+    </tasks>
   </rundefinition>
+
 
    <rundefinition name="value">
       <option name="-benchmark"/>
@@ -71,7 +67,7 @@ SPDX-License-Identifier: Apache-2.0
     <option name="-config">~/CPAchecker-2.2-unix/config/valueAnalysis.properties</option> 
     <option name="-preprocess"/>
     <tasks name="No Context">
-    <include>no_context/overflow6.c</include>
+    <include>no_context/loop6.c</include>
     <propertyfile>~/CPAchecker-2.2-unix/config/properties/unreach-call.prp</propertyfile>
     </tasks> 
   </rundefinition>

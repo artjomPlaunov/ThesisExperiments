@@ -1,0 +1,4 @@
+main::i	4
+main::__retval__	7
+__VERIFIER_assert::cond	4
+main::c	4

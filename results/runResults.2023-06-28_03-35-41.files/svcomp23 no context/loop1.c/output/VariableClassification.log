@@ -1,0 +1,33 @@
+IntBool
+
+[]
+
+IntEq
+
+[]
+
+IntAdd
+
+[]
+
+IntOverflow
+
+[main::array[index], main::index]
+
+ALL
+
+[main::array, main::array[index], __VERIFIER_assert::cond, main::index]
+
+DEPENDENCIES
+
+[[__VERIFIER_assert::cond] --> [0],
+[main::array] --> [],
+[main::array[index], main::index] --> [0, 1, 2, 1000]]
+
+RELEVANT VARS
+
+[reach_error, __VERIFIER_assert::cond, __VERIFIER_assert, main::array, main::index]
+
+RELEVANT FIELDS
+
+{}

@@ -1,0 +1,7 @@
+digraph S3_zero {
+46 [shape="circle" label="N46\n8"]
+47 [shape="circle" label="N47\n7"]
+47 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">47</td><td align="left">int a;</td></tr><tr><td align="right">48</td><td align="left">int b;</td></tr><tr><td align="right">49</td><td align="left">a = main_pres_val;</td></tr><tr><td align="right">50</td><td align="left">b = main_dbl_val;</td></tr><tr><td align="right">51</td><td align="left">main_zero_val_t = b - (a + a);</td></tr><tr><td align="right">52</td><td align="left">main_zero_req_up = 1;</td></tr><tr><td align="right">53</td><td align="left">return;</td></tr></table>>]
+47 -> 45[label=""]
+46 -> 47 [label="Function start dummy edge" fontname="Courier New"]
+}

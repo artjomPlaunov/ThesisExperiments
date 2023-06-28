@@ -1,0 +1,213 @@
+
+Selection Algorithm statistics
+------------------------------
+Size of preliminary analysis reached set:      0
+Used algorithm property:                       /home/artjom/CPAchecker-2.2-unix/config/components/svcomp23--multipleLoopsConfig.properties
+Program containing only relevant bools:        0
+Relevant boolean vars / relevant vars ratio:   0.0676
+Requires alias handling:                       0
+Requires loop handling:                        1
+Has a single loop:                             0
+Requires composite-type handling:              0
+Requires array handling:                       0
+Requires float handling:                       0
+Requires recursion handling:                   0
+Relevant addressed vars / relevant vars ratio: 0.0000
+Program containing external functions:         true
+Number of all righthand side functions:        9
+
+
+Restart Algorithm statistics
+----------------------------
+Number of algorithms provided:    7
+Number of algorithms used:        2
+Total time for algorithm 2:     0.147s
+
+ValueAnalysisCPA statistics
+---------------------------
+Number of variables per state:                     0.00 (sum: 0, count: 1448, min: 0, max: 0)
+Number of global variables per state:              0.00 (sum: 0, count: 1448, min: 0, max: 0)
+Number of assumptions:                                  668
+Number of deterministic assumptions:                      0
+Level of Determinism:                              0%
+
+ValueAnalysisPrecisionAdjustment statistics
+-------------------------------------------
+Number of abstraction computations:                    1781
+Total time for liveness abstraction:                   0.000s
+Total time for abstraction computation:                0.007s
+Total time for path thresholds:                        0.000s
+
+ConstraintsStrengthenOperator statistics
+----------------------------------------
+Total time for strengthening by ConstraintsCPA:     0.000s
+Replaced symbolic expressions: 0
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.001s
+Automaton transfers with branching:                0
+Automaton transfer successors:                     1.00 (sum: 2122, count: 2122, min: 1, max: 1) [1 x 2122]
+Number of states with assumption transitions:      0
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            1448
+Max size of waitlist:            27
+Average size of waitlist:        13
+Number of computed successors:   1781
+Max successors for one state:    2
+Number of times merged:          0
+Number of times stopped:         334
+Number of times breaked:         0
+
+Total time for CPA algorithm:         0.079s (Max:     0.079s)
+  Time for choose from waitlist:      0.012s
+  Time for precision adjustment:      0.014s
+  Time for transfer relation:         0.029s
+  Time for stop operator:             0.004s
+  Time for adding to reached set:     0.010s
+
+ValueAnalysisRefiner statistics
+-------------------------------
+Number of refinements:                                    0
+Number of targets found:                                  0 (count: 0, min: 0, max: 0, avg: 0.00)
+Time for completing refinement:                        0.000s
+Number of root relocations:                               0
+Number of similar, repeated refinements:                  0
+Number of unique precision increments:             0
+
+PathExtractor statistics
+------------------------
+Total number of targets found:            0
+
+ValueAnalysisPathInterpolator statistics
+----------------------------------------
+  Time for interpolation:                              0.000s
+  Number of interpolations:                               0
+  Number of interpolation queries:                        0 (count: 0, min: 0, max: 0, avg: 0.00)
+  Size of interpolant:                             0.00 (sum: 0, count: 0, min: 0, max: 0)
+  Number of sliced prefixes:                              0 (count: 0, min: 0, max: 0, avg: 0.00)
+  Extracting infeasible sliced prefixes:               0.000s
+  Selecting infeasible sliced prefixes:                0.000s
+
+CEGAR algorithm statistics
+--------------------------
+Number of CEGAR refinements:          0
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    0
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            1448
+Max size of waitlist:            27
+Average size of waitlist:        13
+Number of computed successors:   1781
+Max successors for one state:    2
+Number of times merged:          0
+Number of times stopped:         334
+Number of times breaked:         0
+
+Total time for CPA algorithm:         0.079s (Max:     0.079s)
+  Time for choose from waitlist:      0.012s
+  Time for precision adjustment:      0.014s
+  Time for transfer relation:         0.029s
+  Time for stop operator:             0.004s
+  Time for adding to reached set:     0.010s
+
+ValueAnalysisRefiner statistics
+-------------------------------
+Number of refinements:                                    0
+Number of targets found:                                  0 (count: 0, min: 0, max: 0, avg: 0.00)
+Time for completing refinement:                        0.000s
+Number of root relocations:                               0
+Number of similar, repeated refinements:                  0
+Number of unique precision increments:             0
+
+PathExtractor statistics
+------------------------
+Total number of targets found:            0
+
+ValueAnalysisPathInterpolator statistics
+----------------------------------------
+  Time for interpolation:                              0.000s
+  Number of interpolations:                               0
+  Number of interpolation queries:                        0 (count: 0, min: 0, max: 0, avg: 0.00)
+  Size of interpolant:                             0.00 (sum: 0, count: 0, min: 0, max: 0)
+  Number of sliced prefixes:                              0 (count: 0, min: 0, max: 0, avg: 0.00)
+  Extracting infeasible sliced prefixes:               0.000s
+  Selecting infeasible sliced prefixes:                0.000s
+
+CEGAR algorithm statistics
+--------------------------
+Number of CEGAR refinements:          0
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    0
+
+Code Coverage
+-----------------------------
+  Function coverage:      1.000
+  Visited lines:          457
+  Total lines:            457
+  Line coverage:          1.000
+  Visited conditions:     232
+  Total conditions:       232
+  Condition coverage:     1.000
+
+CPAchecker general statistics
+-----------------------------
+Number of program locations:                       734
+Number of CFA edges (per node):                         863 (count: 734, min: 0, max: 3, avg: 1.18)
+Number of relevant variables:                      74
+Number of functions:                               9
+Number of loops (and loop nodes):                         4 (sum: 291, min: 17, max: 196, avg: 72.75)
+Size of reached set:             1448
+  Number of reached locations:   513 (70%)
+    Avg states per location:     2
+    Max states per location:     3 (at node N7)
+  Number of reached functions:   9 (100%)
+  Number of target states:       0
+
+Time for analysis setup:          0.985s
+  Time for loading CPAs:          0.134s
+  Time for loading parser:        0.146s
+  Time for CFA construction:      0.678s
+    Time for parsing file(s):     0.258s
+    Time for AST to CFA:          0.160s
+    Time for CFA sanity check:    0.046s
+    Time for post-processing:     0.150s
+    Time for CFA export:          0.849s
+      Time for function pointers resolving:            0.005s
+        Function calls via function pointers:             0 (count: 1, min: 0, max: 0, avg: 0.00)
+        Instrumented function pointer calls:              0 (count: 1, min: 0, max: 0, avg: 0.00)
+        Function calls with function pointer arguments:        0 (count: 1, min: 0, max: 0, avg: 0.00)
+        Instrumented function pointer arguments:          0 (count: 1, min: 0, max: 0, avg: 0.00)
+      Time for classifying variables:                  0.086s
+        Time for collecting variables:                 0.030s
+        Time for solving dependencies:                 0.001s
+        Time for building hierarchy:                   0.000s
+        Time for building classification:              0.050s
+        Time for exporting data:                       0.005s
+Time for Analysis:              122.635s
+CPU time for analysis:          141.270s
+Time for analyzing result:        0.001s
+Total time for CPAchecker:      123.621s
+Total CPU time for CPAchecker:  144.150s
+Time for statistics:              0.054s
+
+Time for Garbage Collector:       1.302s (in 57 runs)
+Garbage Collector(s) used:    G1 Old Generation, G1 Young Generation
+Used heap memory:                674MB (   643 MiB) max;    323MB (   308 MiB) avg;    693MB (   660 MiB) peak
+Used non-heap memory:             54MB (    51 MiB) max;     52MB (    49 MiB) avg;     55MB (    52 MiB) peak
+Used in G1 Old Gen pool:         163MB (   155 MiB) max;     97MB (    93 MiB) avg;    163MB (   155 MiB) peak
+Allocated heap memory:           871MB (   831 MiB) max;    721MB (   688 MiB) avg
+Allocated non-heap memory:        57MB (    54 MiB) max;     54MB (    52 MiB) avg
+Total process virtual memory:  12222MB ( 11656 MiB) max;  12217MB ( 11651 MiB) avg
+
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".

@@ -1,0 +1,45 @@
+digraph ARG {
+node [style="filled" shape="box" color="white"]
+subgraph cluster_0 {
+label="Refinement 0"
+1335 [label="1335 @ N36\nmain\n" id="1335"]
+1338 [fillcolor="cornflowerblue" label="1338 @ N25\nmain\nAbstractionState: ABS3: true\n" id="1338"]
+1346 [fillcolor="cornflowerblue" label="1346 @ N29\nmain\nAbstractionState: ABS4: true\n" id="1346"]
+1351 [label="1351 @ N11\n__VERIFIER_assert entry\n" id="1351"]
+1357 [fillcolor="red" label="1357 @ N1\nreach_error entry\nAbstractionState: ABS6: true\n AutomatonState: SVCOMP: _predefinedState_ERROR\n" id="1357"]
+1354 [fillcolor="orange" label="1354 @ N13\n__VERIFIER_assert\n" id="1354"]
+1350 [fillcolor="green" label="1350 @ N25\nmain\nAbstractionState: ABS5: true\n" id="1350"]
+1344 [label="1344 @ N18\nmain exit\n" id="1344"]
+1335 -> 1338 []
+1350 -> 1338 [style="dashed" weight="0" label="covered by"]
+1338 -> 1344 []
+1338 -> 1346 []
+1346 -> 1350 []
+1346 -> 1351 []
+1351 -> 1354 []
+1351 -> 1357 []
+}
+1334 -> 1335
+subgraph cluster_1 {
+label="Refinement 1"
+1380 [fillcolor="red" label="1380 @ N1\nreach_error entry\nAbstractionState: ABS10: true\n AutomatonState: SVCOMP: _predefinedState_ERROR\n" id="1380"]
+}
+1374 -> 1380
+1334 [fillcolor="cornflowerblue" label="1334 @ N19\nmain entry\nAbstractionState: ABS2: true\n" id="1334"]
+1361 [fillcolor="cornflowerblue" label="1361 @ N25\nmain\nAbstractionState: ABS7: true\n" id="1361"]
+1369 [fillcolor="cornflowerblue" label="1369 @ N29\nmain\nAbstractionState: ABS8: true\n" id="1369"]
+1374 [label="1374 @ N11\n__VERIFIER_assert entry\n" id="1374"]
+1382 [label="1382 @ N10\n__VERIFIER_assert exit\n" id="1382"]
+1386 [fillcolor="green" label="1386 @ N29\nmain\nAbstractionState: ABS12: true\n" id="1386"]
+1373 [fillcolor="green" label="1373 @ N25\nmain\nAbstractionState: ABS9: true\n" id="1373"]
+1367 [label="1367 @ N18\nmain exit\n" id="1367"]
+1334 -> 1361 []
+1373 -> 1361 [style="dashed" weight="0" label="covered by"]
+1361 -> 1367 []
+1361 -> 1369 []
+1386 -> 1369 [style="dashed" weight="0" label="covered by"]
+1369 -> 1373 []
+1369 -> 1374 []
+1374 -> 1382 []
+1382 -> 1386 []
+}
