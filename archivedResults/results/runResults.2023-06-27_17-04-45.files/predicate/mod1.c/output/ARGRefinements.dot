@@ -1,0 +1,30 @@
+digraph ARG {
+node [style="filled" shape="box" color="white"]
+subgraph cluster_0 {
+label="Refinement 0"
+1 [label="1 @ N46\nmain\n" id="1"]
+4 [fillcolor="cornflowerblue" label="4 @ N19\nmain\nAbstractionState: ABS1: true\n" id="4"]
+13 [label="13 @ N1\nerror entry\n" id="13"]
+16 [fillcolor="red" label="16 @ N4\nerror\nAbstractionState: ABS2: true\n AutomatonState: ErrorLabelAutomaton: _predefinedState_ERROR\n" id="16"]
+11 [fillcolor="orange" label="11 @ N42\nmain\n" id="11"]
+10 [fillcolor="orange" label="10 @ N68\nmain\n" id="10"]
+6 [fillcolor="orange" label="6 @ N23\nmain\n" id="6"]
+1 -> 4 []
+4 -> 6 []
+4 -> 10 []
+4 -> 11 []
+4 -> 13 []
+13 -> 16 []
+}
+0 -> 1
+0 [fillcolor="cornflowerblue" label="0 @ N8\nmain entry\nAbstractionState: ABS0: true\n" id="0"]
+20 [fillcolor="cornflowerblue" label="20 @ N19\nmain\nAbstractionState: ABS3\n" id="20"]
+53 [fillcolor="green" label="53 @ N19\nmain\nAbstractionState: ABS5\n" id="53"]
+33 [label="33 @ N7\nmain exit\n" id="33"]
+29 [label="29 @ N1\nerror entry\n" id="29"]
+0 -> 20 []
+53 -> 20 [style="dashed" weight="0" label="covered by"]
+20 -> 29 []
+20 -> 33 []
+20 -> 53 []
+}

@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+
+<!--
+This file is part of BenchExec, a framework for reliable benchmarking:
+https://github.com/sosy-lab/benchexec
+
+SPDX-FileCopyrightText: 2007-2020 Dirk Beyer <https://www.sosy-lab.org>
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
+<!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 2.3//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.2.3dtd">
+<benchmark tool="cpachecker"
+           timelimit="200s"
+           memlimit="8000 MB"
+           cpuCores="4">
+ 
+<rundefinition name="predicate context">
+      <option name="-benchmark"/>
+      <option name="-heap">8000m</option>
+    <option name="-config">~/CPAchecker-2.2-unix/config/predicateAnalysis.properties</option> 
+    <option name="-preprocess"/>
+    <tasks name="Context">
+    <include>context/overflow6.c</include>
+    <propertyfile>~/CPAchecker-2.2-unix/config/properties/unreach-call.prp</propertyfile>
+    </tasks> 
+  </rundefinition>
+
+<rundefinition name="predicate no context">
+      <option name="-benchmark"/>
+      <option name="-heap">8000m</option>
+    <option name="-config">~/CPAchecker-2.2-unix/config/predicateAnalysis.properties</option> 
+    <tasks name="No Context">
+    <include>no_context/overflow6.c</include>
+    <propertyfile>~/CPAchecker-2.2-unix/config/properties/unreach-call.prp</propertyfile>
+    </tasks>
+  </rundefinition>
+
+
+
+  
+
+
+<rundefinition name="svcomp23 no context">
+      <option name="-heap">8000m</option>
+    <option name="-config">~/CPAchecker-2.2-unix/config/svcomp23.properties</option> 
+    <option name="-preprocess"/>
+    <option name="-timelimit">900s</option>
+    <tasks name="No Context">
+    <include>no_context/overflow6.c</include>
+    <propertyfile>~/CPAchecker-2.2-unix/config/properties/unreach-call.prp</propertyfile>
+    </tasks>
+  </rundefinition>
+
+  <rundefinition name="svcomp23 context">
+      <option name="-benchmark"/>
+      <option name="-heap">8000m</option>
+      <option name="-timelimit">900s</option>
+    <option name="-config">~/CPAchecker-2.2-unix/config/svcomp23.properties</option> 
+    <option name="-preprocess"/>
+    <tasks name="Context">
+    <include>context/overflow6.c</include>
+    <propertyfile>~/CPAchecker-2.2-unix/config/properties/unreach-call.prp</propertyfile>
+
+    </tasks> 
+  </rundefinition>
+
+   <rundefinition name="value">
+      <option name="-benchmark"/>
+      <option name="-heap">8000m</option>
+    <option name="-config">~/CPAchecker-2.2-unix/config/valueAnalysis.properties</option> 
+    <option name="-preprocess"/>
+    <tasks name="No Context">
+    <include>no_context/overflow6.c</include>
+    <propertyfile>~/CPAchecker-2.2-unix/config/properties/unreach-call.prp</propertyfile>
+    </tasks> 
+  </rundefinition>
+
+ 
+
+  
+
+</benchmark>
