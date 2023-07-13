@@ -6,7 +6,7 @@ void assume_abort_if_not(int cond) {
 }
 void __VERIFIER_assert(int cond) { if(!(cond)) { ERROR: {reach_error();abort();} } }
 extern int __VERIFIER_nondet_int(void);
-void* malloc(unsigned int size);
+extern void __VERIFIER_assume(int);
 
  int f(int a) {
     int tmp, count = 0;
