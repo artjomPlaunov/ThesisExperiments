@@ -1,0 +1,3 @@
+main::x	0
+__VERIFIER_assert::cond	0
+assume_abort_if_not::cond	7

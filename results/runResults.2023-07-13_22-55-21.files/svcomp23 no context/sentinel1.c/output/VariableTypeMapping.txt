@@ -1,0 +1,9 @@
+main::a[pos]	0
+main::a[i]	0
+main::i__1	4
+main::i	4
+main::__retval__	7
+__VERIFIER_assert::cond	4
+main::pos	4
+main::a	0
+main::marker	0

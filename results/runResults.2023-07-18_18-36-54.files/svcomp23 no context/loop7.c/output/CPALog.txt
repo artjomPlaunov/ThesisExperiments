@@ -1,0 +1,46 @@
+2023-07-18 18:40:10:000	INFO	CPAMain.detectFrontendLanguageIfNecessary	Language C detected and set for analysis
+
+2023-07-18 18:40:10:019	INFO	ResourceLimitChecker.fromConfiguration	Using the following resource limits: CPU-time limit of 900s
+
+2023-07-18 18:40:10:082	INFO	CPAchecker.run	CPAchecker 2.2 / svcomp23 (OpenJDK 64-Bit Server VM 11.0.19) started
+
+2023-07-18 18:40:10:110	INFO	CPAchecker.parse	Parsing CFA from file(s) "no_context/loop7.c"
+
+2023-07-18 18:40:10:911	INFO	CoreComponentsFactory.createAlgorithm	Using heuristics to select analysis
+
+2023-07-18 18:40:10:922	WARNING	CPAchecker.printConfigurationWarnings	The following configuration options were specified but are not used:
+ cpa.callstack.unsupportedFunctions
+ termination.violation.witness
+ cpa.predicate.memoryAllocationsAlwaysSucceed
+ cpa.arg.compressWitness
+ cpa.callstack.skipFunctionPointerRecursion
+ cpa.composite.aggregateBasicBlocks
+ counterexample.export.graphml
+ counterexample.export.compressWitness
+ cpa.arg.proofWitness 
+
+
+2023-07-18 18:40:10:922	INFO	CPAchecker.runAlgorithm	Starting analysis ...
+
+2023-07-18 18:40:10:925	INFO	SelectionAlgorithm.chooseConfig	Performing heuristic ...
+
+2023-07-18 18:40:10:929	INFO	Analysis /home/artjom/CPAchecker-2.2-unix/config/components/svcomp23--configselection-restart-valueAnalysis-fallbacks.properties:ResourceLimitChecker.fromConfiguration	Using the following resource limits: CPU-time limit of 900s
+
+2023-07-18 18:40:10:936	INFO	Analysis /home/artjom/CPAchecker-2.2-unix/config/components/svcomp23--configselection-restart-valueAnalysis-fallbacks.properties:CoreComponentsFactory.createAlgorithm	Using Restarting Algorithm
+
+2023-07-18 18:40:10:943	INFO	Analysis /home/artjom/CPAchecker-2.2-unix/config/components/svcomp23--configselection-restart-valueAnalysis-fallbacks.properties:RestartAlgorithm.run	Loading analysis 1 from file /home/artjom/CPAchecker-2.2-unix/config/components/svcomp23--configselection-restartcomponent-valueAnalysis.properties ...
+
+2023-07-18 18:40:10:948	INFO	Analysis /home/artjom/CPAchecker-2.2-unix/config/components/svcomp23--configselection-restart-valueAnalysis-fallbacks.properties:NestingAlgorithm.checkConfigs	Mismatch of configuration options when loading from '/home/artjom/CPAchecker-2.2-unix/config/components/svcomp23--configselection-restartcomponent-valueAnalysis.properties': 'cpa.composite.aggregateBasicBlocks' has two values 'false' and 'true'. Using 'true'.
+
+2023-07-18 18:40:10:949	INFO	Analysis /home/artjom/CPAchecker-2.2-unix/config/components/svcomp23--configselection-restart-valueAnalysis-fallbacks.properties:NestingAlgorithm.checkConfigs	Mismatch of configuration options when loading from '/home/artjom/CPAchecker-2.2-unix/config/components/svcomp23--configselection-restartcomponent-valueAnalysis.properties': 'limits.time.cpu' has two values '900s' and '90'. Using '90'.
+
+2023-07-18 18:40:10:949	INFO	Analysis /home/artjom/CPAchecker-2.2-unix/config/components/svcomp23--configselection-restart-valueAnalysis-fallbacks.properties:NestingAlgorithm.checkConfigs	Mismatch of configuration options when loading from '/home/artjom/CPAchecker-2.2-unix/config/components/svcomp23--configselection-restartcomponent-valueAnalysis.properties': 'limits.time.cpu::required' has two values '900' and '90s'. Using '90s'.
+
+2023-07-18 18:40:10:949	INFO	Analysis /home/artjom/CPAchecker-2.2-unix/config/components/svcomp23--configselection-restart-valueAnalysis-fallbacks.properties:NestingAlgorithm.checkConfigs	Mismatch of configuration options when loading from '/home/artjom/CPAchecker-2.2-unix/config/components/svcomp23--configselection-restartcomponent-valueAnalysis.properties': 'specification' has two values '/home/artjom/CPAchecker-2.2-unix/config/properties/unreach-call.prp' and 'specification/default.spc'. Using 'specification/default.spc'.
+
+2023-07-18 18:40:10:951	INFO	Analysis /home/artjom/CPAchecker-2.2-unix/config/components/svcomp23--configselection-restart-valueAnalysis-fallbacks.properties:Analysis /home/artjom/CPAchecker-2.2-unix/config/components/svcomp23--configselection-restartcomponent-valueAnalysis.properties:ResourceLimitChecker.fromConfiguration	Using the following resource limits: CPU-time limit of 90s
+
+2023-07-18 18:40:11:136	INFO	Analysis /home/artjom/CPAchecker-2.2-unix/config/components/svcomp23--configselection-restart-valueAnalysis-fallbacks.properties:RestartAlgorithm.run	Starting analysis 1 ...
+
+2023-07-18 18:40:14:193	INFO	CPAchecker.runAlgorithm	Stopping analysis ...
+

@@ -1,0 +1,72 @@
+digraph CFA {
+19 [shape="circle" label="N19\n17"]
+27 [shape="circle" label="N27\n16"]
+28 [shape="circle" label="N28\n15"]
+29 [shape="circle" label="N29\n14"]
+30 [shape="circle" label="N30\n13"]
+31 [shape="circle" label="N31\n12"]
+32 [shape="circle" label="N32\n11"]
+33 [shape="circle" label="N33\n10"]
+34 [shape="circle" label="N34\n9"]
+35 [shape="circle" label="N35\n8"]
+20 [shape="circle" label="N20\n7"]
+21 [shape="circle" label="N21\n6"]
+22 [shape="doublecircle" label="N22\n5"]
+24 [shape="circle" label="N24\n4"]
+11 [shape="circle" label="N11\n7"]
+12 [shape="diamond" label="N12\n6"]
+13 [shape="circle" label="N13\n1"]
+10 [shape="circle" label="N10\n0"]
+26 [shape="circle" label="N26\n3"]
+18 [shape="circle" label="N18\n2"]
+14 [shape="circle" label="N14\n5"]
+15 [shape="circle" label="N15\n4"]
+1 [shape="circle" label="N1\n3"]
+2 [shape="circle" label="N2\n2"]
+38 [shape="circle" label="N38\n0"]
+16 [shape="circle" label="N16\n3"]
+36 [shape="circle" label="N36\n0"]
+23 [shape="circle" label="N23\n1"]
+25 [shape="circle" label="N25\n0"]
+node [shape="circle"]
+subgraph cluster___VERIFIER_assert {
+label="__VERIFIER_assert()"
+11 -> 12 [label="Function start dummy edge"]
+12 -> 14 [label="[cond == 0]"]
+12 -> 13 [label="[!(cond == 0)]"]
+13 -> 10 [label="default return"]
+14 -> 15 [label="Label: ERROR"]
+15 -> 16 [label="reach_error();" style="dotted" arrowhead="empty"]
+15 -> 16 [label="reach_error();"]
+16 -> 36 [label="abort();"]}
+subgraph cluster_assume_abort_if_not {
+label="assume_abort_if_not()"
+}
+subgraph cluster_main {
+label="main()"
+19 -> 27 [label="INIT GLOBAL VARS"]
+27 -> 28 [label="void abort();"]
+28 -> 29 [label="void __assert_fail(const char *, const char *, unsigned int, const char *);"]
+29 -> 30 [label="void reach_error();"]
+30 -> 31 [label="void assume_abort_if_not(int cond);"]
+31 -> 32 [label="void __VERIFIER_assert(int cond);"]
+32 -> 33 [label="int __VERIFIER_nondet_int();"]
+33 -> 34 [label="void __VERIFIER_assume(int);"]
+34 -> 35 [label="int main();"]
+35 -> 20 [label="Function start dummy edge"]
+20 -> 21 [label="unsigned int x = 10;"]
+21 -> 22 [label="while"]
+22 -> 23 [label="[x >= 10]"]
+22 -> 24 [label="[!(x >= 10)]"]
+24 -> 26 [label="__VERIFIER_assert(0 == (x % 2));" style="dotted" arrowhead="empty"]
+24 -> 26 [label="__VERIFIER_assert(0 == (x % 2));"]
+26 -> 18 [label="default return"]
+23 -> 25 [label="x = x + 2;"]
+25 -> 22 [label=""]}
+subgraph cluster_reach_error {
+label="reach_error()"
+1 -> 2 [label="Function start dummy edge"]
+2 -> 38 [label="__assert_fail(\"0\", \"loop5.c\", 10, \"reach_error\");"]}
+24 -> 11 [label="__VERIFIER_assert(0 == (x % 2))"]
+10 -> 26 [label="Return edge from __VERIFIER_assert to main: __VERIFIER_assert(0 == (x % 2));"]
+15 -> 1 [label="reach_error()"]}

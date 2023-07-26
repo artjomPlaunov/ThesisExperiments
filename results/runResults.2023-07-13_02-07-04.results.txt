@@ -1,0 +1,95 @@
+   BENCHMARK INFORMATION
+benchmark definition:    runResults.xml
+name:                    runResults
+run sets:                predicate context.Context, svcomp23 context.Context, svcomp23 no context.No Context, predicate no context.No Context, value.No Context
+date:                    Thu, 2023-07-13 02:07:04 EDT
+tool:                    CPAchecker 2.2
+tool executable:         /home/artjom/CPAchecker-2.2-unix/scripts/cpa.sh
+options:
+resource limits:
+- memory:                8000.0 MB
+- time:                  200 s
+- cpu cores:             4
+hardware requirements:
+- cpu cores:             4
+- memory:                8000.0 MB
+------------------------------------------------------------
+
+   SYSTEM INFORMATION
+host:                    artjom-VirtualBox
+os:                      Linux-5.15.0-75-generic-x86_64-with-glibc2.29
+cpu:                     Intel Core i5-8265U CPU @ 1.60GHz
+- cores:                 4
+- max frequency:         1799.998 MHz
+ram:                     10884.804607999999 MB
+------------------------------------------------------------
+
+
+
+predicate context.Context
+Run set 1 of 5 with options '-benchmark -heap 8000m -config ~/CPAchecker-2.2-unix/config/predicateAnalysis.properties -preprocess' and propertyfile 'None'
+
+inputfile               status                       cpu time   wall time        host
+-------------------------------------------------------------------------------------
+gauge1.c                true                             5.95        2.19        None
+gauge2.c                true                             5.68        2.17        None
+loop1.c                 true                             5.56        2.12        None
+loop2.c                 true                             5.73        2.19        None
+loop3.c                 true                             5.53        2.09        None
+loop4.c                 true                             5.58        2.09        None
+loop5.c                 true                             5.36        2.15        None
+loop6.c                 true                             5.38        2.11        None
+mod1.c                  true                             5.66        2.28        None
+mod2.c                  true                             5.60        2.10        None
+mod3.c                  true                             5.71        2.17        None
+mod4.c                  true                             5.59        2.23        None
+overflow1.c             true                             5.45        2.12        None
+overflow2.c             true                             5.81        2.16        None
+overflow3.c             true                             5.63        2.14        None
+overflow4.c             true                             5.30        2.11        None
+overflow5.c             true                             5.71        2.16        None
+overflow6.c             true                             5.74        2.17        None
+-------------------------------------------------------------------------------------
+Run set 1               done                           101.84       45.06           -
+
+
+svcomp23 context.Context
+Run set 2 of 5 with options '-benchmark -heap 8000m -timelimit 900s -config ~/CPAchecker-2.2-unix/config/svcomp23.properties -preprocess' and propertyfile 'None'
+
+inputfile               status                       cpu time   wall time        host
+-------------------------------------------------------------------------------------
+gauge1.c                TIMEOUT                        200.70      169.83        None
+gauge2.c                TIMEOUT                        200.97      165.68        None
+loop1.c                 TIMEOUT                        201.04      188.13        None
+loop2.c                 true                            95.51       90.31        None
+loop3.c                 TIMEOUT                        200.18      185.01        None
+loop4.c                 true                            10.83        4.26        None
+loop5.c                 TIMEOUT                        201.02      186.62        None
+loop6.c                 TIMEOUT                        200.78      183.95        None
+mod1.c                  TIMEOUT                        200.35      159.28        None
+mod2.c                  TIMEOUT                        200.74      170.55        None
+mod3.c                  TIMEOUT                        200.19      157.00        None
+mod4.c                  TIMEOUT                        200.16      181.92        None
+overflow1.c             TIMEOUT                        200.49      180.64        None
+overflow2.c             true                           147.12      107.80        None
+overflow3.c             TIMEOUT                        200.81      173.93        None
+overflow4.c             TIMEOUT                        200.67      175.95        None
+overflow5.c             TIMEOUT                        200.31      183.13        None
+overflow6.c             true                            33.13       26.76        None
+-------------------------------------------------------------------------------------
+Run set 2               done                          3095.47     2696.24           -
+
+
+svcomp23 no context.No Context
+Run set 3 of 5 with options '-heap 8000m -config ~/CPAchecker-2.2-unix/config/svcomp23.properties -preprocess -timelimit 900s' and propertyfile 'None'
+
+inputfile               status                       cpu time   wall time        host
+-------------------------------------------------------------------------------------
+gauge1.c                TIMEOUT                        201.10      152.35        None
+gauge2.c                TIMEOUT                        200.47      162.15        None
+loop1.c                 TIMEOUT                        200.55      182.06        None
+loop2.c                 TIMEOUT                        200.21      185.02        None
+loop3.c                 TIMEOUT                        200.12      185.06        None
+loop4.c                 true                            14.40        6.22        None
+loop5.c                 TIMEOUT                        200.96      188.36        None
+loop6.c                 TIMEOUT                        200.26      185.49        None

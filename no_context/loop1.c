@@ -8,6 +8,8 @@ void __VERIFIER_assert(int cond) { if(!(cond)) { ERROR: {reach_error();abort();}
 extern int __VERIFIER_nondet_int(void);
 extern void __VERIFIER_assume(int);
 
+#define SIZE 1000
+
 int main()
 {
   unsigned int array[SIZE];

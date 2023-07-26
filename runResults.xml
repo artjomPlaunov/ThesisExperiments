@@ -21,7 +21,7 @@ SPDX-License-Identifier: Apache-2.0
     <option name="-config">~/CPAchecker-2.2-unix/config/predicateAnalysis.properties</option> 
     <option name="-preprocess"/>
     <tasks name="Context">
-    <include>context/loop6.c</include>
+    <include>context/linear_ineq2.c</include>
     <propertyfile>~/CPAchecker-2.2-unix/config/properties/unreach-call.prp</propertyfile>
     </tasks> 
   </rundefinition>
@@ -33,7 +33,7 @@ SPDX-License-Identifier: Apache-2.0
     <option name="-config">~/CPAchecker-2.2-unix/config/svcomp23.properties</option> 
     <option name="-preprocess"/>
     <tasks name="Context">
-    <include>context/loop6.c</include>
+    <include>context/linear_ineq2.c</include>
     <propertyfile>~/CPAchecker-2.2-unix/config/properties/unreach-call.prp</propertyfile>
 
     </tasks> 
@@ -45,7 +45,7 @@ SPDX-License-Identifier: Apache-2.0
     <option name="-preprocess"/>
     <option name="-timelimit">900s</option>
     <tasks name="No Context">
-    <include>no_context/loop6.c</include>
+    <include>no_context/linear_ineq2.c</include>
     <propertyfile>~/CPAchecker-2.2-unix/config/properties/unreach-call.prp</propertyfile>
     </tasks>
   </rundefinition>
@@ -55,7 +55,7 @@ SPDX-License-Identifier: Apache-2.0
       <option name="-heap">8000m</option>
     <option name="-config">~/CPAchecker-2.2-unix/config/predicateAnalysis.properties</option> 
     <tasks name="No Context">
-    <include>no_context/loop6.c</include>
+    <include>no_context/linear_ineq2.c</include>
     <propertyfile>~/CPAchecker-2.2-unix/config/properties/unreach-call.prp</propertyfile>
     </tasks>
   </rundefinition>
@@ -67,7 +67,7 @@ SPDX-License-Identifier: Apache-2.0
     <option name="-config">~/CPAchecker-2.2-unix/config/valueAnalysis.properties</option> 
     <option name="-preprocess"/>
     <tasks name="No Context">
-    <include>no_context/loop6.c</include>
+    <include>no_context/linear_ineq2.c</include>
     <propertyfile>~/CPAchecker-2.2-unix/config/properties/unreach-call.prp</propertyfile>
     </tasks> 
   </rundefinition>
