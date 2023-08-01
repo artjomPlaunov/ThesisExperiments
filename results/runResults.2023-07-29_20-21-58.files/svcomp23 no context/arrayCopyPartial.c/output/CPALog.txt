@@ -1,0 +1,19 @@
+2023-07-29 20:22:02:585	INFO	CPAMain.detectFrontendLanguageIfNecessary	Language C detected and set for analysis
+
+2023-07-29 20:22:02:602	INFO	ResourceLimitChecker.fromConfiguration	Using the following resource limits: CPU-time limit of 900s
+
+2023-07-29 20:22:02:654	INFO	CPAchecker.run	CPAchecker 2.2 / svcomp23 (OpenJDK 64-Bit Server VM 11.0.19) started
+
+2023-07-29 20:22:02:669	INFO	CPAchecker.parse	Parsing CFA from file(s) "no_context/arrayCopyPartial.c"
+
+2023-07-29 20:22:03:218	WARNING	CheckBindingVisitor.visit	Undefined identifier n found, first referenced in line 20
+
+2023-07-29 20:22:03:229	SEVERE	CFABuilder.createCFA	Error: Parsing failed (Invalid C code because of undefined identifiers mentioned above.)
+
+2023-07-29 20:22:03:230	INFO	CPAchecker.run	Please make sure that the code can be compiled by a compiler.
+If the code was not preprocessed, please use a C preprocessor
+or specify the -preprocess command-line argument.
+If the error still occurs, please send this error message
+together with the input file to cpachecker-users@googlegroups.com.
+
+

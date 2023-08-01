@@ -1,0 +1,85 @@
+   BENCHMARK INFORMATION
+benchmark definition:    runResults.xml
+name:                    runResults
+run sets:                predicate context.Context, svcomp23 context.Context, svcomp23 no context.No Context, predicate no context.No Context, value.No Context
+date:                    Sat, 2023-07-29 20:21:58 EDT
+tool:                    CPAchecker 2.2
+tool executable:         /home/artjom/CPAchecker-2.2-unix/scripts/cpa.sh
+options:
+resource limits:
+- memory:                8000.0 MB
+- time:                  200 s
+- cpu cores:             4
+hardware requirements:
+- cpu cores:             4
+- memory:                8000.0 MB
+------------------------------------------------------------
+
+   SYSTEM INFORMATION
+host:                    artjom-VirtualBox
+os:                      Linux-5.15.0-76-generic-x86_64-with-glibc2.29
+cpu:                     Intel Core i5-8265U CPU @ 1.60GHz
+- cores:                 4
+- max frequency:         1799.998 MHz
+ram:                     10884.804607999999 MB
+------------------------------------------------------------
+
+
+
+predicate context.Context
+Run set 1 of 5 with options '-benchmark -heap 8000m -config ~/CPAchecker-2.2-unix/config/predicateAnalysis.properties -preprocess' and propertyfile 'None'
+
+inputfile               status                       cpu time   wall time        host
+-------------------------------------------------------------------------------------
+arrayCopyPartial.c      ERROR (parsing failed)           2.87        1.18        None
+-------------------------------------------------------------------------------------
+Run set 1               done                             2.89        1.34           -
+
+
+svcomp23 context.Context
+Run set 2 of 5 with options '-benchmark -heap 8000m -timelimit 900s -config ~/CPAchecker-2.2-unix/config/svcomp23.properties -preprocess' and propertyfile 'None'
+
+inputfile               status                       cpu time   wall time        host
+-------------------------------------------------------------------------------------
+arrayCopyPartial.c      ERROR (parsing failed)           2.77        1.17        None
+-------------------------------------------------------------------------------------
+Run set 2               done                             2.80        1.41           -
+
+
+svcomp23 no context.No Context
+Run set 3 of 5 with options '-heap 8000m -config ~/CPAchecker-2.2-unix/config/svcomp23.properties -preprocess -timelimit 900s' and propertyfile 'None'
+
+inputfile               status                       cpu time   wall time        host
+-------------------------------------------------------------------------------------
+arrayCopyPartial.c      ERROR (parsing failed)           3.20        1.26        None
+-------------------------------------------------------------------------------------
+Run set 3               done                             3.24        1.60           -
+
+
+predicate no context.No Context
+Run set 4 of 5 with options '-benchmark -heap 8000m -config ~/CPAchecker-2.2-unix/config/predicateAnalysis.properties' and propertyfile 'None'
+
+inputfile               status                       cpu time   wall time        host
+-------------------------------------------------------------------------------------
+arrayCopyPartial.c      ERROR (parsing failed)           2.52        1.05        None
+-------------------------------------------------------------------------------------
+Run set 4               done                             2.56        1.43           -
+
+
+value.No Context
+Run set 5 of 5 with options '-benchmark -heap 8000m -config ~/CPAchecker-2.2-unix/config/valueAnalysis.properties -preprocess' and propertyfile 'None'
+
+inputfile               status                       cpu time   wall time        host
+-------------------------------------------------------------------------------------
+arrayCopyPartial.c      ERROR (parsing failed)           2.95        1.17        None
+-------------------------------------------------------------------------------------
+Run set 5               done                             2.98        1.44           -
+
+Statistics:              5 Files
+  correct:               0
+    correct true:        0
+    correct false:       0
+  incorrect:             0
+    incorrect true:      0
+    incorrect false:     0
+  unknown:               5
