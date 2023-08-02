@@ -1,0 +1,72 @@
+   BENCHMARK INFORMATION
+benchmark definition:    runResults.xml
+name:                    runResults
+run sets:                predicate context.Context, predicate no context.No Context, svcomp23 context.Context, svcomp23 no context.No Context, value.No Context
+date:                    Tue, 2023-08-01 23:51:41 EDT
+tool:                    CPAchecker 2.2
+tool executable:         /home/artjom/CPAchecker-2.2-unix/scripts/cpa.sh
+options:
+resource limits:
+- memory:                8000.0 MB
+- time:                  60 s
+- cpu cores:             4
+hardware requirements:
+- cpu cores:             4
+- memory:                8000.0 MB
+------------------------------------------------------------
+
+   SYSTEM INFORMATION
+host:                    artjom-VirtualBox
+os:                      Linux-5.15.0-76-generic-x86_64-with-glibc2.29
+cpu:                     Intel Core i5-8265U CPU @ 1.60GHz
+- cores:                 4
+- max frequency:         1799.998 MHz
+ram:                     10884.804607999999 MB
+------------------------------------------------------------
+
+
+
+predicate context.Context
+Run set 1 of 5 with options '-benchmark -heap 8000m -config ~/CPAchecker-2.2-unix/config/predicateAnalysis.properties -preprocess' and propertyfile 'None'
+
+inputfile               status                       cpu time   wall time        host
+-------------------------------------------------------------------------------------
+arrayCopy.c             true                             5.06        1.91        None
+arrayCopyPartial.c      
+gauge1.c                
+gauge2.c                
+linear_ineq1.c          
+linear_ineq2.c          
+loop1.c                 
+loop2.c                 
+loop3.c                 
+loop4.c                 
+loop5.c                 
+loop6.c                 
+loop7.c                 
+loop8.c                 
+mod1.c                  
+mod2.c                  
+mod3.c                  
+mod4.c                  
+mod5.c                  
+mod6.c                  
+overflow1.c             
+overflow2.c             
+overflow3.c             
+overflow4.c             
+overflow5.c             
+overflow6.c             
+sentinel1.c             
+sentinel2.c             
+-------------------------------------------------------------------------------------
+Run set 1               done                            11.75        5.10           -
+
+Statistics:              1 Files
+  correct:               0
+    correct true:        0
+    correct false:       0
+  incorrect:             0
+    incorrect true:      0
+    incorrect false:     0
+  unknown:               0
