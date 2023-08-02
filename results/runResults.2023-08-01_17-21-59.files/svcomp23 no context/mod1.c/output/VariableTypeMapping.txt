@@ -1,0 +1,11 @@
+res	0
+main::__CPAchecker_TMP_0	0
+main::bound	0
+main::i	0
+main::__retval__	7
+__VERIFIER_assert::cond	0
+assume_abort_if_not::cond	7
+main::n3	0
+modFlag	0
+main::n1	0
+main::n2	0

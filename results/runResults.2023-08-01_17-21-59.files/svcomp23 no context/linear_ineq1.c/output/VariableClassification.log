@@ -1,0 +1,34 @@
+IntBool
+
+[assume_abort_if_not::cond]
+
+IntEq
+
+[main::__retval__]
+
+IntAdd
+
+[main::n, main::i, main::v, __VERIFIER_assert::cond, main::s]
+
+IntOverflow
+
+[main::n, main::i, main::v, __VERIFIER_assert::cond, main::s]
+
+ALL
+
+[main::n, main::i, main::v, main::__retval__, __VERIFIER_assert::cond, assume_abort_if_not::cond, main::s]
+
+DEPENDENCIES
+
+[[__VERIFIER_assert::cond, main::s, main::v] --> [0, 65026],
+[assume_abort_if_not::cond] --> [0],
+[main::i, main::n] --> [0, 1],
+[main::__retval__] --> [0, 1]]
+
+RELEVANT VARS
+
+[reach_error, main::n, main::i, main::v, __VERIFIER_assert::cond, __VERIFIER_assert, assume_abort_if_not::cond, main::s]
+
+RELEVANT FIELDS
+
+{}

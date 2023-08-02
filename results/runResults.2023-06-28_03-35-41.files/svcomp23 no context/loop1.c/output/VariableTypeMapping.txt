@@ -1,4 +1,0 @@
-main::array	0
-main::array[index]	0
-__VERIFIER_assert::cond	0
-main::index	0

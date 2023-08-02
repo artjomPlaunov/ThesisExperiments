@@ -1,0 +1,44 @@
+2023-08-01 18:27:56:433	INFO	CPAMain.detectFrontendLanguageIfNecessary	Language C detected and set for analysis
+
+2023-08-01 18:27:56:451	INFO	ResourceLimitChecker.fromConfiguration	Using the following resource limits: CPU-time limit of 900s
+
+2023-08-01 18:27:56:501	INFO	CPAchecker.run	CPAchecker 2.2 / svcomp23 (OpenJDK 64-Bit Server VM 11.0.20) started
+
+2023-08-01 18:27:56:516	INFO	CPAchecker.parse	Parsing CFA from file(s) "no_context/overflow6.c"
+
+2023-08-01 18:27:57:299	INFO	CoreComponentsFactory.createAlgorithm	Using heuristics to select analysis
+
+2023-08-01 18:27:57:308	WARNING	CPAchecker.printConfigurationWarnings	The following configuration options were specified but are not used:
+ cpa.callstack.unsupportedFunctions
+ termination.violation.witness
+ cpa.predicate.memoryAllocationsAlwaysSucceed
+ cpa.arg.compressWitness
+ cpa.callstack.skipFunctionPointerRecursion
+ cpa.composite.aggregateBasicBlocks
+ counterexample.export.graphml
+ counterexample.export.compressWitness
+ cpa.arg.proofWitness 
+
+
+2023-08-01 18:27:57:309	INFO	CPAchecker.runAlgorithm	Starting analysis ...
+
+2023-08-01 18:27:57:311	INFO	SelectionAlgorithm.chooseConfig	Performing heuristic ...
+
+2023-08-01 18:27:57:316	INFO	Analysis /home/artjom/CPAchecker-2.2-unix/config/components/svcomp23--singleLoopConfig.properties:ResourceLimitChecker.fromConfiguration	Using the following resource limits: CPU-time limit of 900s
+
+2023-08-01 18:27:57:318	INFO	Analysis /home/artjom/CPAchecker-2.2-unix/config/components/svcomp23--singleLoopConfig.properties:CoreComponentsFactory.createAlgorithm	Using Restarting Algorithm
+
+2023-08-01 18:27:57:326	INFO	Analysis /home/artjom/CPAchecker-2.2-unix/config/components/svcomp23--singleLoopConfig.properties:RestartAlgorithm.run	Loading analysis 1 from file /home/artjom/CPAchecker-2.2-unix/config/components/svcomp23--singleLoop-symbolicExecution.properties ...
+
+2023-08-01 18:27:57:331	INFO	Analysis /home/artjom/CPAchecker-2.2-unix/config/components/svcomp23--singleLoopConfig.properties:NestingAlgorithm.checkConfigs	Mismatch of configuration options when loading from '/home/artjom/CPAchecker-2.2-unix/config/components/svcomp23--singleLoop-symbolicExecution.properties': 'cpa.composite.aggregateBasicBlocks' has two values 'false' and 'true'. Using 'true'.
+
+2023-08-01 18:27:57:331	INFO	Analysis /home/artjom/CPAchecker-2.2-unix/config/components/svcomp23--singleLoopConfig.properties:NestingAlgorithm.checkConfigs	Mismatch of configuration options when loading from '/home/artjom/CPAchecker-2.2-unix/config/components/svcomp23--singleLoop-symbolicExecution.properties': 'limits.time.cpu' has two values '900s' and '140s'. Using '140s'.
+
+2023-08-01 18:27:57:331	INFO	Analysis /home/artjom/CPAchecker-2.2-unix/config/components/svcomp23--singleLoopConfig.properties:NestingAlgorithm.checkConfigs	Mismatch of configuration options when loading from '/home/artjom/CPAchecker-2.2-unix/config/components/svcomp23--singleLoop-symbolicExecution.properties': 'limits.time.cpu::required' has two values '900' and '140s'. Using '140s'.
+
+2023-08-01 18:27:57:333	INFO	Analysis /home/artjom/CPAchecker-2.2-unix/config/components/svcomp23--singleLoopConfig.properties:Analysis /home/artjom/CPAchecker-2.2-unix/config/components/svcomp23--singleLoop-symbolicExecution.properties:ResourceLimitChecker.fromConfiguration	Using the following resource limits: CPU-time limit of 140s
+
+2023-08-01 18:27:57:561	INFO	Analysis /home/artjom/CPAchecker-2.2-unix/config/components/svcomp23--singleLoopConfig.properties:RestartAlgorithm.run	Starting analysis 1 ...
+
+2023-08-01 18:28:16:579	INFO	CPAchecker.runAlgorithm	Stopping analysis ...
+

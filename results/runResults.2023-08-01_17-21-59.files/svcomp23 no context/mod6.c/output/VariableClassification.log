@@ -1,0 +1,35 @@
+IntBool
+
+[main::__CPAchecker_TMP_0, main::__retval__, assume_abort_if_not::cond]
+
+IntEq
+
+[]
+
+IntAdd
+
+[main::n, main::i]
+
+IntOverflow
+
+[main::n, main::i, __VERIFIER_assert::cond, main::b, main::a]
+
+ALL
+
+[main::n, main::__CPAchecker_TMP_0, main::i, main::__retval__, __VERIFIER_assert::cond, assume_abort_if_not::cond, main::b, main::a]
+
+DEPENDENCIES
+
+[[__VERIFIER_assert::cond, main::a, main::b] --> [0, 137, 432, 59184],
+[assume_abort_if_not::cond] --> [0],
+[main::i, main::n] --> [0, 1, 1000],
+[main::__retval__] --> [0],
+[main::__CPAchecker_TMP_0] --> [0]]
+
+RELEVANT VARS
+
+[reach_error, main::n, main::__CPAchecker_TMP_0, main::i, __VERIFIER_assert::cond, __VERIFIER_assert, assume_abort_if_not::cond, main::b, main::a]
+
+RELEVANT FIELDS
+
+{}

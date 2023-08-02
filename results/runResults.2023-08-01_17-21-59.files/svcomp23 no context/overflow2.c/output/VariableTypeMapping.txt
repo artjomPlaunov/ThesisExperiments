@@ -1,0 +1,5 @@
+main::y	4
+main::x	4
+main::__retval__	7
+__VERIFIER_assert::cond	4
+assume_abort_if_not::cond	7

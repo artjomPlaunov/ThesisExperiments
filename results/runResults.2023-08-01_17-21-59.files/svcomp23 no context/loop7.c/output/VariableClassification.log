@@ -1,0 +1,35 @@
+IntBool
+
+[assume_abort_if_not::cond]
+
+IntEq
+
+[]
+
+IntAdd
+
+[main::i, __VERIFIER_assert::cond]
+
+IntOverflow
+
+[main::i, __VERIFIER_assert::cond]
+
+ALL
+
+[main::i, __VERIFIER_assert::cond, assume_abort_if_not::cond, main::A[1023], main::A]
+
+DEPENDENCIES
+
+[[__VERIFIER_assert::cond, main::i] --> [0, 1, 1023, 1024],
+[assume_abort_if_not::cond] --> [0],
+[main::A] --> [],
+[main::A[i]] --> [],
+[main::A[1023]] --> [0]]
+
+RELEVANT VARS
+
+[reach_error, main::i, __VERIFIER_assert::cond, __VERIFIER_assert, assume_abort_if_not::cond, main::A]
+
+RELEVANT FIELDS
+
+{}

@@ -1,9 +1,0 @@
-loop__main__24:
-(set-info :source |printed by MathSAT|)
-(assert true)
-loop__main__31:
-(set-info :source |printed by MathSAT|)
-(assert true)
-loop__main__39:
-(set-info :source |printed by MathSAT|)
-(assert true)

@@ -1,7 +1,0 @@
-digraph S1_addsub {
-18 [shape="circle" label="N18\n10"]
-19 [shape="circle" label="N19\n9"]
-19 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">19</td><td align="left">int a;</td></tr><tr><td align="right">20</td><td align="left">int b;</td></tr><tr><td align="right">21</td><td align="left">a = main_in1_val;</td></tr><tr><td align="right">22</td><td align="left">b = main_in2_val;</td></tr><tr><td align="right">23</td><td align="left">main_sum_val_t = a + b;</td></tr><tr><td align="right">24</td><td align="left">main_sum_req_up = 1;</td></tr><tr><td align="right">25</td><td align="left">main_diff_val_t = a - b;</td></tr><tr><td align="right">26</td><td align="left">main_diff_req_up = 1;</td></tr><tr><td align="right">27</td><td align="left">return;</td></tr></table>>]
-19 -> 17[label=""]
-18 -> 19 [label="Function start dummy edge" fontname="Courier New"]
-}

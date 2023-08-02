@@ -1,8 +1,0 @@
-main::n	4
-main::__CPAchecker_TMP_0	7
-main::i	4
-main::__retval__	7
-__VERIFIER_assert::cond	0
-assume_abort_if_not::cond	7
-main::b	0
-main::a	0

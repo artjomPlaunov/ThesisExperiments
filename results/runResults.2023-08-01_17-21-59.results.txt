@@ -1,0 +1,215 @@
+   BENCHMARK INFORMATION
+benchmark definition:    runResults.xml
+name:                    runResults
+run sets:                predicate context.Context, predicate no context.No Context, svcomp23 context.Context, svcomp23 no context.No Context, value.No Context
+date:                    Tue, 2023-08-01 17:21:59 EDT
+tool:                    CPAchecker 2.2
+tool executable:         /home/artjom/CPAchecker-2.2-unix/scripts/cpa.sh
+options:
+resource limits:
+- memory:                8000.0 MB
+- time:                  60 s
+- cpu cores:             4
+hardware requirements:
+- cpu cores:             4
+- memory:                8000.0 MB
+------------------------------------------------------------
+
+   SYSTEM INFORMATION
+host:                    artjom-VirtualBox
+os:                      Linux-5.15.0-76-generic-x86_64-with-glibc2.29
+cpu:                     Intel Core i5-8265U CPU @ 1.60GHz
+- cores:                 4
+- max frequency:         1799.998 MHz
+ram:                     10884.804607999999 MB
+------------------------------------------------------------
+
+
+
+predicate context.Context
+Run set 1 of 5 with options '-benchmark -heap 8000m -config ~/CPAchecker-2.2-unix/config/predicateAnalysis.properties -preprocess' and propertyfile 'None'
+
+inputfile               status                       cpu time   wall time        host
+-------------------------------------------------------------------------------------
+arrayCopy.c             true                             5.12        2.17        None
+arrayCopyPartial.c      TIMEOUT                         60.38       50.04        None
+gauge1.c                true                             4.92        1.99        None
+gauge2.c                true                             4.91        1.87        None
+linear_ineq1.c          true                             4.90        1.89        None
+linear_ineq2.c          TIMEOUT                         60.30       50.80        None
+loop1.c                 true                             4.67        1.82        None
+loop2.c                 true                             4.90        1.87        None
+loop3.c                 true                             4.68        1.81        None
+loop4.c                 true                             4.59        1.92        None
+loop5.c                 true                             4.65        1.80        None
+loop6.c                 true                             4.89        1.88        None
+loop7.c                 true                             4.80        1.85        None
+loop8.c                 true                             4.56        1.84        None
+mod1.c                  true                             4.49        1.81        None
+mod2.c                  true                             4.93        1.89        None
+mod3.c                  true                             4.83        1.84        None
+mod4.c                  true                             4.47        1.78        None
+mod5.c                  true                             5.29        2.06        None
+mod6.c                  true                             4.55        1.84        None
+overflow1.c             true                             4.85        1.85        None
+overflow2.c             true                             4.69        1.78        None
+overflow3.c             true                             4.66        1.85        None
+overflow4.c             true                             4.90        1.93        None
+overflow5.c             true                             4.83        1.94        None
+overflow6.c             true                             4.78        1.91        None
+sentinel1.c             true                             6.00        2.44        None
+-------------------------------------------------------------------------------------
+Run set 1               done                           242.92      159.28           -
+
+
+predicate no context.No Context
+Run set 2 of 5 with options '-benchmark -heap 8000m -config ~/CPAchecker-2.2-unix/config/predicateAnalysis.properties' and propertyfile 'None'
+
+inputfile               status                       cpu time   wall time        host
+-------------------------------------------------------------------------------------
+arrayCopy.c             TIMEOUT                         60.64       51.09        None
+arrayCopyPartial.c      TIMEOUT                         60.80       51.07        None
+gauge1.c                TIMEOUT                         60.49       49.68        None
+gauge2.c                TIMEOUT                         60.43       50.10        None
+linear_ineq1.c          TIMEOUT                         60.38       50.78        None
+linear_ineq2.c          TIMEOUT                         60.45       50.53        None
+loop1.c                 TIMEOUT                         60.20       51.65        None
+loop2.c                 TIMEOUT                         60.37       49.96        None
+loop3.c                 TIMEOUT                         60.29       50.56        None
+loop4.c                 TIMEOUT                         60.45       49.54        None
+loop5.c                 TIMEOUT                         60.70       49.53        None
+loop6.c                 TIMEOUT                         60.94       48.33        None
+loop7.c                 TIMEOUT                         60.45       50.20        None
+loop8.c                 TIMEOUT                         60.40       52.02        None
+mod1.c                  TIMEOUT                         60.74       57.37        None
+mod2.c                  TIMEOUT                         60.13       53.35        None
+mod3.c                  TIMEOUT                         60.65       57.80        None
+mod4.c                  TIMEOUT                         60.83       56.32        None
+mod5.c                  TIMEOUT                         60.85       55.52        None
+mod6.c                  TIMEOUT                         60.79       56.10        None
+overflow1.c             TIMEOUT                         60.76       49.57        None
+overflow2.c             true                             4.54        1.79        None
+overflow3.c             TIMEOUT                         60.70       50.14        None
+overflow4.c             TIMEOUT                         60.47       49.95        None
+overflow5.c             TIMEOUT                         60.40       49.81        None
+overflow6.c             TIMEOUT                         60.38       50.40        None
+sentinel1.c             TIMEOUT                         60.36       50.13        None
+-------------------------------------------------------------------------------------
+Run set 2               done                          1579.32     1351.81           -
+
+
+svcomp23 context.Context
+Run set 3 of 5 with options '-benchmark -heap 8000m -timelimit 900s -config ~/CPAchecker-2.2-unix/config/svcomp23.properties -preprocess' and propertyfile 'None'
+
+inputfile               status                       cpu time   wall time        host
+-------------------------------------------------------------------------------------
+arrayCopy.c             TIMEOUT                         60.59       23.54        None
+arrayCopyPartial.c      TIMEOUT                         63.33       38.67        None
+gauge1.c                TIMEOUT                         60.47       46.56        None
+gauge2.c                TIMEOUT                         61.18       48.29        None
+linear_ineq1.c          TIMEOUT                         61.04       54.47        None
+linear_ineq2.c          TIMEOUT                         61.03       54.49        None
+loop1.c                 TIMEOUT                         60.71       56.94        None
+loop2.c                 TIMEOUT                         60.72       56.92        None
+loop3.c                 TIMEOUT                         60.36       51.98        None
+loop4.c                 true                             9.39        3.71        None
+loop5.c                 TIMEOUT                         60.12       52.60        None
+loop6.c                 TIMEOUT                         60.11       52.51        None
+loop7.c                 TIMEOUT (true)                  60.11       52.18        None
+loop8.c                 TIMEOUT                         60.30       46.74        None
+mod1.c                  TIMEOUT                         61.03       44.64        None
+mod2.c                  TIMEOUT                         60.05       42.88        None
+mod3.c                  TIMEOUT                         61.21       45.78        None
+mod4.c                  TIMEOUT                         60.62       49.44        None
+mod5.c                  TIMEOUT                         61.10       48.78        None
+mod6.c                  TIMEOUT                         60.85       49.02        None
+overflow1.c             TIMEOUT                         60.14       52.96        None
+overflow2.c             TIMEOUT                         61.33       49.71        None
+overflow3.c             TIMEOUT                         60.20       52.32        None
+overflow4.c             TIMEOUT                         60.17       52.64        None
+overflow5.c             TIMEOUT                         60.15       53.10        None
+overflow6.c             true                            32.78       26.25        None
+sentinel1.c             TIMEOUT                         60.73       56.85        None
+-------------------------------------------------------------------------------------
+Run set 3               done                          1560.53     1272.42           -
+
+
+svcomp23 no context.No Context
+Run set 4 of 5 with options '-heap 8000m -config ~/CPAchecker-2.2-unix/config/svcomp23.properties -preprocess -timelimit 900s' and propertyfile 'None'
+
+inputfile               status                       cpu time   wall time        host
+-------------------------------------------------------------------------------------
+arrayCopy.c             TIMEOUT                         61.25       20.30        None
+arrayCopyPartial.c      TIMEOUT                         60.16       38.08        None
+gauge1.c                TIMEOUT                         61.10       46.94        None
+gauge2.c                TIMEOUT                         61.92       42.46        None
+linear_ineq1.c          TIMEOUT                         60.20       51.97        None
+linear_ineq2.c          TIMEOUT                         60.17       52.32        None
+loop1.c                 TIMEOUT                         60.79       56.20        None
+loop2.c                 TIMEOUT                         60.79       56.24        None
+loop3.c                 TIMEOUT                         60.53       49.86        None
+loop4.c                 true                            14.61        6.19        None
+loop5.c                 TIMEOUT                         60.28       51.20        None
+loop6.c                 TIMEOUT                         60.22       51.61        None
+loop7.c                 TIMEOUT (true)                  60.43       49.18        None
+loop8.c                 TIMEOUT                         61.21       47.86        None
+mod1.c                  TIMEOUT                         60.22       46.21        None
+mod2.c                  TIMEOUT                         60.89       45.22        None
+mod3.c                  TIMEOUT                         60.11       46.85        None
+mod4.c                  TIMEOUT                         60.76       48.40        None
+mod5.c                  TIMEOUT                         60.96       47.93        None
+mod6.c                  TIMEOUT                         60.86       48.56        None
+overflow1.c             TIMEOUT                         60.14       52.68        None
+overflow2.c             TIMEOUT                         60.08       50.20        None
+overflow3.c             TIMEOUT                         60.24       52.46        None
+overflow4.c             TIMEOUT                         60.67       51.89        None
+overflow5.c             TIMEOUT                         60.33       52.64        None
+overflow6.c             true                            35.66       26.27        None
+sentinel1.c             TIMEOUT                         60.83       55.97        None
+-------------------------------------------------------------------------------------
+Run set 4               done                          1566.11     1255.83           -
+
+
+value.No Context
+Run set 5 of 5 with options '-benchmark -heap 8000m -config ~/CPAchecker-2.2-unix/config/valueAnalysis.properties -preprocess' and propertyfile 'None'
+
+inputfile               status                       cpu time   wall time        host
+-------------------------------------------------------------------------------------
+arrayCopy.c             TIMEOUT                         61.42       27.51        None
+arrayCopyPartial.c      TIMEOUT                         61.20       48.79        None
+gauge1.c                TIMEOUT                         60.53       48.42        None
+gauge2.c                TIMEOUT                         60.56       48.67        None
+linear_ineq1.c          unknown                          5.98        2.21        None
+linear_ineq2.c          unknown                          6.06        2.29        None
+loop1.c                 TIMEOUT                         60.54       49.74        None
+loop2.c                 TIMEOUT                         60.52       49.34        None
+loop3.c                 TIMEOUT                         61.03       54.88        None
+loop4.c                 true                             6.94        2.55        None
+loop5.c                 TIMEOUT                         60.90       55.68        None
+loop6.c                 TIMEOUT                         60.35       53.24        None
+loop7.c                 true                            31.78       18.55        None
+loop8.c                 TIMEOUT                         60.15       52.86        None
+mod1.c                  TIMEOUT                         60.24       52.02        None
+mod2.c                  unknown                          5.37        2.13        None
+mod3.c                  TIMEOUT                         60.30       51.34        None
+mod4.c                  TIMEOUT                         61.02       54.71        None
+mod5.c                  TIMEOUT                         60.22       52.58        None
+mod6.c                  TIMEOUT                         60.16       52.95        None
+overflow1.c             TIMEOUT                         60.14       53.19        None
+overflow2.c             unknown                          4.89        1.96        None
+overflow3.c             TIMEOUT                         60.04       53.66        None
+overflow4.c             TIMEOUT                         60.16       53.17        None
+overflow5.c             TIMEOUT                         60.12       53.16        None
+overflow6.c             true                             4.87        1.84        None
+sentinel1.c             TIMEOUT                         60.94       55.29        None
+-------------------------------------------------------------------------------------
+Run set 5               done                          1277.26     1061.38           -
+
+Statistics:            135 Files
+  correct:               0
+    correct true:        0
+    correct false:       0
+  incorrect:             0
+    incorrect true:      0
+    incorrect false:     0
+  unknown:             102

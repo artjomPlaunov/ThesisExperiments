@@ -1,0 +1,187 @@
+
+Selection Algorithm statistics
+------------------------------
+Size of preliminary analysis reached set:      0
+Used algorithm property:                       /home/artjom/CPAchecker-2.2-unix/config/components/svcomp23--singleLoopConfig.properties
+Program containing only relevant bools:        0
+Relevant boolean vars / relevant vars ratio:   0.1667
+Requires alias handling:                       0
+Requires loop handling:                        1
+Has a single loop:                             1
+Requires composite-type handling:              0
+Requires array handling:                       0
+Requires float handling:                       0
+Requires recursion handling:                   0
+Relevant addressed vars / relevant vars ratio: 0.0000
+Program containing external functions:         true
+Number of all righthand side functions:        5
+
+
+Restart Algorithm statistics
+----------------------------
+Number of algorithms provided:    7
+Number of algorithms used:        1
+Total time for algorithm 1:    19.254s
+
+ValueAnalysisCPA statistics
+---------------------------
+Number of variables per state:                     1.99 (sum: 830, count: 417, min: 0, max: 3)
+Number of global variables per state:              0.00 (sum: 0, count: 417, min: 0, max: 0)
+Number of assumptions:                                  408
+Number of deterministic assumptions:                      0
+Level of Determinism:                              0%
+
+ValueAnalysisPrecisionAdjustment statistics
+-------------------------------------------
+Number of abstraction computations:                     416
+Total time for liveness abstraction:                   0.000s
+Total time for abstraction computation:                0.008s
+Total time for path thresholds:                        0.000s
+
+SymbolicValueAnalysisPrecisionAdjustment statistics
+---------------------------------------------------
+Symbolic values before refinement:                      827 (count: 416, min: 0, max: 3, avg: 1.99)
+Symbolic values after refinement:                       827 (count: 416, min: 0, max: 3, avg: 1.99)
+
+ConstraintsStrengthenOperator statistics
+----------------------------------------
+Total time for strengthening by ConstraintsCPA:     0.653s
+Replaced symbolic expressions: 0
+
+ConstraintsCPA statistics
+-------------------------
+
+Time for solving constraints:                         17.293s
+  Time for independent computation:                    0.518s
+  Time for SMT check:                                  0.127s
+  Time for resolving definites:                        0.031s
+
+Cache lookups:                                        82220
+Direct cache hits:                                        0
+Direct cache lookup time:                              0.006s
+Subset cache hits:                                        0
+Subset cache lookup time:                              9.082s
+Superset cache hits:                                      0
+Superset cache lookup time:                            5.947s
+
+Number of removed outdated constraints:                   0 (count: 408, min: 0, max: 0, avg: 0.00)
+Time for outdated constraint removal:                  0.614s
+
+Constraints after refinement in state:                42436 (count: 416, min: 0, max: 204, avg: 102.01)
+Constraints before refinement in state:               42436 (count: 416, min: 0, max: 204, avg: 102.01)
+Time for constraints adjustment:                       0.012s
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.013s
+Automaton transfers with branching:                0
+Automaton transfer successors:                     1.00 (sum: 730, count: 730, min: 1, max: 1) [1 x 730]
+Number of states with assumption transitions:      0
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            417
+Max size of waitlist:            3
+Average size of waitlist:        1
+Number of computed successors:   416
+Max successors for one state:    2
+Number of times merged:          0
+Number of times stopped:         0
+Number of times breaked:         0
+
+Total time for CPA algorithm:        19.012s (Max:    19.012s)
+  Time for choose from waitlist:      0.002s
+  Time for precision adjustment:      0.093s
+  Time for transfer relation:        18.862s
+  Time for stop operator:             0.035s
+  Time for adding to reached set:     0.007s
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    0
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            417
+Max size of waitlist:            3
+Average size of waitlist:        1
+Number of computed successors:   416
+Max successors for one state:    2
+Number of times merged:          0
+Number of times stopped:         0
+Number of times breaked:         0
+
+Total time for CPA algorithm:        19.012s (Max:    19.012s)
+  Time for choose from waitlist:      0.002s
+  Time for precision adjustment:      0.093s
+  Time for transfer relation:        18.862s
+  Time for stop operator:             0.035s
+  Time for adding to reached set:     0.007s
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    0
+
+Code Coverage
+-----------------------------
+  Function coverage:      0.500
+  Visited lines:          10
+  Total lines:            12
+  Line coverage:          0.833
+  Visited conditions:     8
+  Total conditions:       12
+  Condition coverage:     0.667
+
+CPAchecker general statistics
+-----------------------------
+Number of program locations:                       48
+Number of CFA edges (per node):                          47 (count: 48, min: 0, max: 2, avg: 0.98)
+Number of relevant variables:                      6
+Number of functions:                               4
+Number of loops (and loop nodes):                         1 (sum: 5, min: 5, max: 5, avg: 5.00)
+Size of reached set:             417
+  Number of reached locations:   17 (35%)
+    Avg states per location:     24
+    Max states per location:     101 (at node N29)
+  Number of reached functions:   2 (50%)
+  Number of target states:       0
+
+Time for analysis setup:          0.794s
+  Time for loading CPAs:          0.145s
+  Time for loading parser:        0.151s
+  Time for CFA construction:      0.471s
+    Time for parsing file(s):     0.227s
+    Time for AST to CFA:          0.083s
+    Time for CFA sanity check:    0.020s
+    Time for post-processing:     0.074s
+    Time for CFA export:          0.731s
+      Time for function pointers resolving:            0.004s
+        Function calls via function pointers:             0 (count: 1, min: 0, max: 0, avg: 0.00)
+        Instrumented function pointer calls:              0 (count: 1, min: 0, max: 0, avg: 0.00)
+        Function calls with function pointer arguments:        0 (count: 1, min: 0, max: 0, avg: 0.00)
+        Instrumented function pointer arguments:          0 (count: 1, min: 0, max: 0, avg: 0.00)
+      Time for classifying variables:                  0.037s
+        Time for collecting variables:                 0.014s
+        Time for solving dependencies:                 0.001s
+        Time for building hierarchy:                   0.000s
+        Time for building classification:              0.021s
+        Time for exporting data:                       0.001s
+Time for Analysis:               19.269s
+CPU time for analysis:           23.570s
+Time for analyzing result:        0.000s
+Total time for CPAchecker:       20.064s
+Total CPU time for CPAchecker:   25.900s
+Time for statistics:              0.055s
+
+Time for Garbage Collector:       0.325s (in 29 runs)
+Garbage Collector(s) used:    G1 Old Generation, G1 Young Generation
+Used heap memory:                368MB (   351 MiB) max;    169MB (   161 MiB) avg;    408MB (   389 MiB) peak
+Used non-heap memory:             43MB (    41 MiB) max;     41MB (    39 MiB) avg;     44MB (    42 MiB) peak
+Used in G1 Old Gen pool:         150MB (   143 MiB) max;     73MB (    70 MiB) avg;    150MB (   143 MiB) peak
+Allocated heap memory:           547MB (   522 MiB) max;    329MB (   313 MiB) avg
+Allocated non-heap memory:        47MB (    44 MiB) max;     44MB (    42 MiB) avg
+Total process virtual memory:  12220MB ( 11654 MiB) max;  12201MB ( 11636 MiB) avg
+
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".

@@ -1,4 +1,0 @@
-f::__retval__	0
-main::x	0
-__VERIFIER_assert::cond	0
-f::z	0
